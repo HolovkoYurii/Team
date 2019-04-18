@@ -5,6 +5,26 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-family: "Fontawesome"; }
 
+header {
+  width: 1170px;
+  margin: auto; }
+
+.menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 27px auto; }
+
+.menu-help {
+  margin-left: 485px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px; }
+  .menu-help p {
+    color: #e74c3c; }
+    .menu-help p span {
+      color: #546e7a; }
+
 * {
   box-sizing: border-box;
   margin: 0;

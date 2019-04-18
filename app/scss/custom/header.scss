@@ -1,2 +1,24 @@
 @import "../_variabels";
 @import "../_mixins";
+
+
+header{
+    @include default-container
+}
+
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px auto;
+}
+.menu-help{
+    margin-left: 485px;
+    font-size: 15px;
+    p{
+        color: #e74c3c;
+        span{
+            color: #546e7a;
+        }
+    }
+}
