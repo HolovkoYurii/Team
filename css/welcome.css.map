@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,mBAAmB,CAAA;EACf,UAAU,EAAE,8BAA8B,CAAC,SAAS,CAAC,YAAc;CACtE;;AAED,AAAA,kBAAkB,CAAA;EERd,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,IAAI;CFYf;;AALD,AAEI,kBAFc,CAEd,EAAE,CAAA;EACE,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "../app/scss/custom/welcome.scss",
+        "../app/scss/_variabels.scss",
+        "../app/scss/_mixins.scss"
+    ],
+    "names": [],
+    "file": "welcome.css"
+}
