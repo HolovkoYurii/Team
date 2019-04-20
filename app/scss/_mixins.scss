@@ -1,6 +1,10 @@
-@mixin default-container {
+@mixin default-container () {
     width: 1170px;
     margin: auto;
     border:solid red;
     
 }
+@mixin col-4 () {
+    width: 33.333333%;             /* Width of the column for 4/12 part of the page */ 
+}
+	
