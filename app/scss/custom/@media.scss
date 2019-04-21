@@ -1,0 +1,27 @@
+@media(max-width:767px){
+    .our-work{
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-work li{
+        margin:0;
+        margin-bottom:30px;
+    }
+    .more-items{
+        flex-direction: column;
+        align-items: center;
+   
+        button{
+         margin-bottom:20px;
+
+     }
+    } 
+}
+@media(max-width: 991px){
+    .wrapper-content{
+        flex-direction: column;
+    }
+   .baner-title{
+        margin-bottom: 40px;
+    }
+}

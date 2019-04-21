@@ -1,6 +1,9 @@
 @mixin default-container {
     width: 1170px;
     margin: auto;
-    border:solid red;
-    
+}   
+@mixin flex-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
