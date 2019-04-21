@@ -19,7 +19,7 @@ gulp.task('browser', function() {
 });
 
 gulp.task('clean', function () {
-    return gulp.src('./app/css/*', {read: false})
+    return gulp.src('./app/css/', {read: false})
         .pipe(clean());
 });
 

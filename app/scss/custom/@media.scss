@@ -17,3 +17,11 @@
      }
     } 
 }
+@media(max-width: 991px){
+    .wrapper-content{
+        flex-direction: column;
+    }
+   .baner-title{
+        margin-bottom: 40px;
+    }
+}
