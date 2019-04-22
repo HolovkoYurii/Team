@@ -72,10 +72,11 @@ header{
 
 /* --- menu-nav --- */
 
+
 .menu-nav{
     @include flex-center;
     background: #263238;
-    height: 60px;
+    min-height: 60px;
     font-family: 'Roboto', sans-serif;
     ul{
         @include default-container;
@@ -86,9 +87,11 @@ header{
         font-size: 14px;
     }
 }
- 
 .menu-nav li + li{
     margin-left: 40px;
+}
+.slicknav_menu {
+	display:none;
 }
 /* --- / menu-nav --- */
 
@@ -108,7 +111,6 @@ header{
         margin-right: 15px;
     }
     /*--- / menu-top ---*/
-
 
     }
 @media(max-width: 880px){
@@ -148,6 +150,13 @@ header{
     .menu-nav li+li {
         margin-left: 20px;
     }
+    
+    #main {
+		display:none;
+	}
+    .menu-nav-ul .slicknav_menu {
+		display:block;
+	}
 }
 
 @media(max-width: 590px){
@@ -230,3 +239,4 @@ header{
         padding: 3px 4px;
     }
 }
+

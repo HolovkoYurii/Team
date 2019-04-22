@@ -76,7 +76,7 @@ header {
   justify-content: center;
   align-items: center;
   background: #263238;
-  height: 60px;
+  min-height: 60px;
   font-family: 'Roboto', sans-serif; }
   .menu-nav ul {
     max-width: 1170px;
@@ -91,6 +91,9 @@ header {
 
 .menu-nav li + li {
   margin-left: 40px; }
+
+.slicknav_menu {
+  display: none; }
 
 /* --- / menu-nav --- */
 /* --- site adaptation --- */
@@ -129,7 +132,11 @@ header {
   .menu-nav ul {
     font-size: 12px; }
   .menu-nav li + li {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  #main {
+    display: none; }
+  .menu-nav-ul .slicknav_menu {
+    display: block; } }
 
 @media (max-width: 590px) {
   .menu-logo img {
@@ -520,3 +527,32 @@ form span {
   form span:after {
     font-size: 12px;
     top: 6px; } }
+
+@media (max-width: 590px) {
+  .welcome-background {
+    height: 300px; }
+  .welcome-container h1 {
+    margin-top: 77px;
+    font-size: 25px; }
+  .welcome-paragraf {
+    margin-top: 35px;
+    font-size: 11px; }
+  .welcome-search {
+    margin-top: 24px;
+    width: 345px;
+    height: 22px;
+    font-size: 8px; } }
+
+@media (max-width: 425px) {
+  .welcome-container h1 {
+    line-height: 26px;
+    text-align: center;
+    padding: 0px 15px; }
+  .welcome-paragraf {
+    margin-top: 19px;
+    font-size: 11px;
+    padding: 0px 53px;
+    text-align: center;
+    line-height: 15px; }
+  .welcome-search {
+    width: 220px; } }
