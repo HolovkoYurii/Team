@@ -10,6 +10,7 @@
     background: url('../../img/titleimg.jpg') no-repeat center / cover;
     width: 100%;
     height: 530px;
+    z-index: 2;
 }
 
 /* ---  text decoration --- */
@@ -26,6 +27,7 @@
         line-height: 30px;
     }
 }
+
 .welcome-paragraf{
     margin-top: 58px;
     font-weight: medium;
@@ -71,7 +73,6 @@ form span{
 
 /* --- / input decoration --- */
 
-/*  */
 
 @media(max-width: 880px){
     .welcome-container h1 {
@@ -95,6 +96,7 @@ form span{
         top: 2px;
     }
 }
+
 
 @media(max-width: 660px){
     .welcome-container h1 {
