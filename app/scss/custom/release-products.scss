@@ -143,25 +143,25 @@ h2{
     left: 14px;
   }   
   .all{
-    @include flex-wrap
+    @include flex-center;
 } 
  .wordPress{
-  @include flex-wrap
+  @include flex-center;
  }
  .jomla{
-  @include flex-wrap
+  @include flex-center;
 
  }
  .plugins{
-  @include flex-wrap
+  @include flex-center;
 
  }
  .component{
-  @include flex-wrap;
+  @include flex-center;
 
  }
  .pcd{
-  @include flex-wrap;
+  @include flex-center;
 
  }
  .more-items{
