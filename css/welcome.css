@@ -1,0 +1,13 @@
+.welcome-background {
+  background: url("../../img/title-img.jpg") no-repeat center/cover;
+}
+
+.welcome-container {
+  width: 1170px;
+  margin: auto;
+}
+
+.welcome-container h1 {
+  margin-top: 160px;
+}
+/*# sourceMappingURL=welcome.css.map */

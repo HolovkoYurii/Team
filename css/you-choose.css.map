@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../app/scss/custom/you-choose.scss",
+        "../app/scss/_variabels.scss",
+        "../app/scss/_mixins.scss"
+    ],
+    "names": [],
+    "file": "you-choose.css"
+}
