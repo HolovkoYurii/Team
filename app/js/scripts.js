@@ -4,3 +4,10 @@ $( function() {
     $("#products-tabs").tabs();
   } );
    
+  
+  $(function(){
+      $('#main').slicknav({
+          prependTo:'.menu-nav-ul',
+          label: ''
+      });
+  });

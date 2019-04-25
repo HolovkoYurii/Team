@@ -1,0 +1,15 @@
+.modal{
+        .modal-content{
+        width: 729px;
+        height: 484px;
+        background-color: aqua;
+        .modal-header{
+            border: none;
+        }
+    }
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
