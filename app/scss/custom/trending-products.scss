@@ -1,16 +1,24 @@
 @import "../_variabels";
 @import "../_mixins";
 
+.trending-products * .product-details{
+min-width: 0;
+max-width: 40px;
+max-width:95%;
+
+}
+.trending-products * .wrapp-lightning::before{
+
+    left: -5%;
+    top: -10%;
+}
+
 .trending-products{
     padding-top: 121px;
     padding-bottom: 121px;
     overflow: hidden;
-    
-    }
-    .product-details{
-       min-width: 450px;
-       max-width: 450px;   
-    }       
+    }     
+ 
     .slick-dots li button:before{
         font-family: 'slick';
         font-size: 0px;
@@ -47,4 +55,7 @@
         padding: 0;
         cursor: pointer;
       }
-
+      .slick-dots li:last-child{
+        display: none;
+      }
+  

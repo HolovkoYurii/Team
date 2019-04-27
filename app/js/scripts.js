@@ -10,8 +10,8 @@ $( function() {
       autoplay: true,
       autoplaySpeed:5000,	
       infinite: true,
-      slidesToShow: 3,
-      slidesthoshow:3,
+      slidesToShow: 4,
+      slidesthoshow:4,
       
     });
   });
