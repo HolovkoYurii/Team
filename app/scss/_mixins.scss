@@ -1,12 +1,15 @@
 @mixin default-container {
     width: 1170px;
     margin: auto;
+
 }   
-<<<<<<< HEAD
-@mixin flex-wrap{
+@mixin flex-center () {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+@mixin flex-wrap{
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-=======
->>>>>>> cc06bdea943e43d977836f5063ac620229e8fa18
