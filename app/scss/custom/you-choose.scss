@@ -3,7 +3,6 @@
 
 .you-choose {
     width: 100%;
-    height: 620px;
     background-color: #263238;     /* Block "You choose" */
     display: flex;
     justify-content: center;
@@ -15,27 +14,21 @@
     flex-direction: column;
 }
 .block-title {
-    height: 155px;
-    display: flex;
-    align-items: flex-end;           /* Block title "You choose" */
-    justify-content: center;
+    padding-top: 100px;      /* Block title "You choose" */ 
+    text-align: center;
 }
 .title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;                               /* Title */
     color: #ffffff;
 }
 .row-you-choose {
-    height: 465px;
+    padding-bottom: 120px;
     display: flex;                         /* Row */
     flex-direction: row;
-	
-	.col + .col {
-        margin-left: 30px;
-    }
-}
-.col {
+	}
+.coll {
                         /* Column */
     padding: 0 30px;
     }
@@ -49,8 +42,11 @@
     width: 25%;                      /* Width of the column for 3/12 part of the page */ 
     }
     
-	.col-4 {
-    @include col-4 ()            /* Width of the column for 4/12 part of the page */ 
+	.coll-4 {
+    @include coll-4 ()            /* Width of the column for 4/12 part of the page */ 
+    }
+    .col-11 {
+        max-width: 370px;
     }
 	
     .col-5 {
@@ -107,7 +103,7 @@
     .col-hover:hover {
 
         .round {
-            background-color: #d4d4d4; 
+            background-color: #d4d4d4;             /* Hover */
         }
         .subtitle {
             color: #8bc34a;
@@ -120,3 +116,25 @@
         font-weight: 400;
         color: #b0bec5; 
     }
+    @media (max-width: 767px) {
+        
+            .col-sm-chose {
+                width: 50%;
+            }
+            .coll-sm-12 {
+                width: 100%;
+            }
+            .coll-4+.coll-4 {
+                margin-left: 0px;
+            }      
+               
+        .row-you-choose {
+            flex-wrap: wrap;            /* Width of the column for 4/12 part of the page */ 
+            justify-content: space-between;
+        }
+}
+@media (max-width: 548px) {
+    .coll-xs-12 {
+        width: 100%;
+    }
+}

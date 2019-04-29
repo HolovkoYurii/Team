@@ -1,0 +1,23 @@
+.modal {
+    .modal-content {
+        width: 729px;
+        height: 484px;
+        background-color: green;
+       }
+    .modal-header {
+        border: none;
+    }
+     
+   .modal-body {
+       display: flex;
+       flex-direction: column;
+   }
+   .custom-file-input:lang(en)~.custom-file-label::after {
+       content: "Choose file";
+   }
+   .custom-file-label::after {
+       position: absolute;
+       top: 7px;
+
+   }
+}
