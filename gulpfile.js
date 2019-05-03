@@ -19,7 +19,7 @@ gulp.task('browser', function() {
 });
 
 gulp.task('clean', function () {
-    return gulp.src('./app/css/*', {read: false})
+    return gulp.src('./app/css/*.css', {read: false})
         .pipe(clean());
 });
 
@@ -40,6 +40,11 @@ gulp.task('sprite', function () {
     .pipe(gulp.dest('app/lib/'));
     return merge (imgStream, cssStream)
 });
+gulp.task('tinypng', function() {
+    return gulp.src(['app/img/*.png', 'app/img/*.jpg'])
+        .pipe(tinypng('eGwHsgRHgRYLa2syNI121TJRmNwb7J46'))
+        .pipe(gulp.dest('app/img/'));
+})
 
 
 gulp.task('sass', function () {
@@ -72,9 +77,10 @@ gulp.task('minCss', gulp.series('clean', 'sass'))
 
 gulp.task('watch', function(){
      gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
+     gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
      gulp.watch("app/*.html").on('change', browserSync.reload);
      gulp.watch("app/css/*.css").on('change', browserSync.reload);
 
 })
 
-gulp.task('default', gulp.series('minCss', gulp.parallel('browser', 'sprite','watch')))
+gulp.task('default', gulp.series('minCss', 'tinypng', gulp.parallel('browser', 'sprite','watch')))

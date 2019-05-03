@@ -1,2 +1,140 @@
 @import "../_variabels";
 @import "../_mixins";
+
+.you-choose {
+    width: 100%;
+    background-color: #263238;     /* Block "You choose" */
+    display: flex;
+    justify-content: center;
+}
+.container-you-choose {
+    max-width: 1170px;
+    width: 1170px;
+    display: flex;                   /* Container in the Block "You choose" */   
+    flex-direction: column;
+}
+.block-title {
+    padding-top: 100px;      /* Block title "You choose" */ 
+    text-align: center;
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;                               /* Title */
+    color: #ffffff;
+}
+.row-you-choose {
+    padding-bottom: 120px;
+    display: flex;                         /* Row */
+    flex-direction: row;
+	}
+.coll {
+                        /* Column */
+    padding: 0 30px;
+    }
+    .col-1 {                            /* Width of the column for 1/12 part of the page  */ 
+    width: 8.3333333%;
+    }
+    .col-2 {
+    width: 16.666666%;                /* Width of the column for 2/12 part of the page */  
+    }
+    .col-3 {
+    width: 25%;                      /* Width of the column for 3/12 part of the page */ 
+    }
+    
+	.coll-4 {
+    @include coll-4 ()            /* Width of the column for 4/12 part of the page */ 
+    }
+    .col-11 {
+        max-width: 370px;
+    }
+	
+    .col-5 {
+    width: 41.666666%;            /* Width of the column for 5/12 part of the page */
+    }
+    .col-6 {
+    width: 50%;                   /* Width of the column for 6/12 part of the page */
+    }
+    .col-7 {
+    width: 58.333333333%;         /* Width of the column for 7/12 part of the page */
+    }
+    
+    .col-8 {
+    width: 66.666666667%;          /* Width of the column for 8/12 part of the page */
+    }
+    
+    .col-9 {
+    width: 75%;                   /* Width of the column for 9/12 part of the page */
+    }
+    
+    .col-10 {
+    width: 83.333333333%;         /* Width of the column for 10/12 part of the page */
+    }
+    
+    .col-11 {
+    width: 91.666666667%;          /* Width of the column for 11/12 part of the page */
+    }
+    .col-12 {
+    width: 100%;                   /* Width of the column for 12/12 part of the page */
+    }
+   
+    
+    .round {
+        display: block;
+        margin: 90px auto 30px;
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #b5b5b5;             /* Color for Round */
+        border-color: #b5b5b5;
+    }
+        .subtitle {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 24px;                               /* Title */
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 30px;
+        display: block;
+        color: #ffffff;
+        }
+    
+    .col-hover:hover {
+
+        .round {
+            background-color: #d4d4d4;             /* Hover */
+        }
+        .subtitle {
+            color: #8bc34a;
+        }
+    }
+	.text {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;             /* Text */
+        font-size: 15px;
+        font-weight: 400;
+        color: #b0bec5; 
+    }
+    @media (max-width: 767px) {
+        
+            .col-sm-chose {
+                width: 50%;
+            }
+            .coll-sm-12 {
+                width: 100%;
+            }
+            .coll-4+.coll-4 {
+                margin-left: 0px;
+            }      
+               
+        .row-you-choose {
+            flex-wrap: wrap;            /* Width of the column for 4/12 part of the page */ 
+            justify-content: space-between;
+        }
+}
+@media (max-width: 548px) {
+    .coll-xs-12 {
+        width: 100%;
+    }
+}
