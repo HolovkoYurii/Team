@@ -56,6 +56,11 @@ gulp.task('sass', function () {
 });
 
 
+
+
+
+
+
 /* gulp.task('allCss', function () { 
     return gulp.src('./app/css/*.css')
         .pipe(concat('allstyle.css'))
