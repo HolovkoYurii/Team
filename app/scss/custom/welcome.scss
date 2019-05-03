@@ -20,6 +20,7 @@
     @include flex-center;
     flex-direction: column;
     color: $color-text;
+    padding: 0px 10px;
     h1{
         margin-top: 160px;
         font-weight: bold;
@@ -64,93 +65,97 @@ form span{
         font-size: 20px;
         position: absolute;
         right: 20px;
-        top: -1px;
+        top: -5px;
         color: #a0a0a0;
         cursor: pointer;
     }
 }
-
-
 /* --- / input decoration --- */
 
 
 @media(max-width: 880px){
-    .welcome-container h1 {
-        font-size: 40px;
-        margin-top: 130px;
-        line-height: 15px;
+
+    .welcome{
+        display: flex;
+        flex-direction: column;
     }
-    .welcome-paragraf {
-        font-size: 17px;
+    .welcome-container h1{
+        margin-top: 100px;
+        text-align: center;
+        line-height: normal;
     }
-    .welcome-search {
-        width: 540px;
-        height: 40px;
+    .welcome-paragraf{
+        text-align: center;
+        margin: 20px;
     }
-    .welcome-search {
-        font-size: 11px;
-    }
-    form span:after {
-        font-size: 16px;
-        right: 11px;
-        top: 2px;
+    .welcome-search{
+        max-width: 530px;
     }
 }
 
+ @media(max-width: 590px){
 
-@media(max-width: 660px){
-    .welcome-container h1 {
-        font-size: 33px;
-        line-height: 5px;
-    }
-    .welcome-paragraf {
-        font-size: 14px;
-    }
     .welcome-search {
-        width: 460px;
-        height: 35px;
-        font-size: 9px;
+        margin: 24px 15px;
+        max-width: 400px;
+        height: 56px;
     }
     form span:after {
-        font-size: 12px;
-        top: 6px;
-    }
-}
-
-@media(max-width: 590px){
-    .welcome-background {
-        height: 300px;
-    }
-    .welcome-container h1 {
-        margin-top: 77px;
-        font-size: 25px;
-    }
-    .welcome-paragraf {
-        margin-top: 35px;
-        font-size: 11px;
-    }
-    .welcome-search {
-        margin-top: 24px;
-        width: 345px;
-        height: 22px;
-        font-size: 8px;
+        font-size: 19px;
+        right: 26px;
+        top: -3px;
     }
 }
 
 @media(max-width: 425px){
+
     .welcome-container h1{
-        line-height: 26px; 
-        text-align: center;
-        padding: 0px 15px;
-    }
-    .welcome-paragraf {
-        margin-top: 19px;
-        font-size: 11px;
-        padding: 0px 53px;
-        text-align: center;
-        line-height: 15px;
+        margin-top: 90px;
+        font-size: 39px;
     }
     .welcome-search {
-        width: 220px;
+        width: 300px;
+        height: 44px;
+    }
+}
+@media (max-width: 320px){
+    .welcome-container h1 {
+        font-size: 33px;
+    }
+    .welcome-search {
+        line-height: 23px;
+    }
+    .welcome-search {
+        width: 238px;
+    }
+}
+@media (max-width: 240px){
+    .welcome-container h1 {
+        font-size: 34px;
+    }
+    .welcome-paragraf, .welcome-search {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .welcome-search {
+        margin: 4px 0px;
+        max-width: 200px;
+        height: 36px;
+    }
+    form span:after {
+        font-size: 15px;
+        right: 9px;
+        top: -2px;
+    }
+}
+@media (max-width: 205px){
+    .welcome-container h1 {
+        font-size: 30px;
+    }
+    .welcome-paragraf, .welcome-search {
+        font-size: 14px;
+    }
+    .welcome-search {
+        max-width: 169px;
     }
 }

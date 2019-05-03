@@ -7,45 +7,66 @@
         <title>FOXTAR - market place</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Raleway:700|Roboto:400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="./lib/slicknav/slicknav.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/allstyle.min.css">
-
-<!--         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
- -->        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="./lib/slicknav/jquery.slicknav.min.js"></script>
-        
-    
-
 
     </head>
     <body> 
         <!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+        <!-- block login -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" 
+            role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close"
+                            data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title"
+                        id="exampleModalCenterTitle">Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-footer-container">
+                            <!-- modal-body-fawesom-name -->
+                            <form action="">
+                                <span class="modal-body-fawesom-name">
+                                    <input type="text" class="modal-body-input" placeholder="Name">
+                                </span>
+                            </form>
+                            <!-- / modal-body-fawesom-name -->
+                            
+                            <!-- modal-body-fawesom-password -->
+                            <form action="">
+                                <span class="modal-body-fawesom-password">
+                                    <input type="password" class="modal-body-input" placeholder="Password">
+                                </span>
+                            </form>
+                            <!-- / modal-body-fawesom-password -->
+                        </div>
+                    </div>
+                    <div class="modal-footer-all">
+                        <div class="modal-body-footer-container">
+                            <div class="modal-footer-btn">
+                                <button type="button" class="modal-btn"
+                                    data-dismiss="modal">Submit
+                                </button>
+                                <button type="button" class="modal-btn-primary ">
+                                    <i class="fas fa-edit"></i>
+                                    <span>Create an account</span>
+                                </button>
+                            </div>
+                            <div class="modal-footer-password">
+                                <a href="">Lost password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              <div class="modal-title">Login</div>
-              <form action="">
-                  <input type="text">
-                  <input type="password">
-              </form>
-              <div class="modal-btns">
-                  <button>Submit</button>
-                  <button>Creat An Account</button>
-              </div>
-              <div><a href="">lost password</a></div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!--  -->
+        <!-- / block login -->
+      <!-- / Modal -->
+
         <header>
             <div class="menu-top">
                 <div class="menu-logo">
@@ -59,34 +80,60 @@
                     <span class="menu-icon-number">8</span>
                 </div>
                 <div class="menu-top-button">
-                    <a href="" class="menu-top-button-l "data-toggle="modal" data-target="#exampleModalLong">Login</a>
+                    <a href="" class="menu-top-button-l" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
                     <a href="" class="menu-top-button-r">Register</a>
                 </div>
             </div>
             <!-- / menu-top -->
+            <!-- menu navbar -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WordPress</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Joomla</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">PSD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Plugins</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Components</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- / menu navbar -->
         </header>
      <!-- / .HEADER -->
-        <div id="main">
-            <div class="menu-nav">
-                <ul class="menu-list menu-nav-ul">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">WordPress</a></li>
-                    <li><a href="#">Joomla</a></li>
-                    <li><a href="#">PSD</a></li>
-                    <li><a href="#">Plugins</a></li>
-                    <li><a href="#">Components</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- / menu-nav -->
         <div class="welcome">
             <div class="welcome-background">
                 <div class="welcome-container">
-                    <h1 class="welcome-title">
+                    <h1>
                         Welcome To Foxtar Market Place!
                     </h1>
                     <p class="welcome-paragraf">
@@ -94,580 +141,16 @@
                     </p>
                     <form action="">
                         <span>
-                            <input type="text" class="welcome-search" placeholder="Search Your Keywords...">
+                            <input type="text" class="welcome-search"  placeholder="Search Your Keywords...">
                         </span>
                     </form>
                 </div>
             </div>
         </div>
         <!-- /.welcome -->
-        <!-- /.main -->
-            <div class="release-products">
-           <div class="release-products-title">
-               Let’s Check Out Our Newest Release Prodcuts
-           </div>
-           <div class="tabs" id="products-tabs">
-                <ul class="our-work">
-                    <li><a href="#all">All</a></li>
-                    <li><a href="#wordPress">WordPress</a></li>
-                    <li><a href="#jomla">Jomla</a></li>
-                    <li><a href="#plugins">Plugins</a></li>
-                    <li><a href="#component">Component</a></li>
-                    <li><a href="#pcd">PSD</a></li>
-                </ul>
-                <div class="all"id="all">
-                   <a href="#" class="product-details">
-                        <div class="card-product">
-                            <div class="product-information">
-                                <div class="foto-product" src alt=""></div>
-                                    <div class="title-info">
-                                            <span class="product-title">
-                                                Responsive Mobile APP
-                                            </span>
-                                            <span class="subtitle">
-                                                Site Template
-                                            </span>
-                                            <span class="price-product">$19</span>
-                                    </div>
-                                    <div class="assessment-product">
-                                            <span class="circle"></span>
-                                            <span>Radiustheme</span>
-                                            <div class="stars">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span class="product-evaluation">05</span>
-                                            </div>
-                                    </div>		
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-details">
-                        <div class="card-product">
-                                    <div class="product-information  wrapp-lightning lightning">
-                                        <div class="foto-product" src alt=""></div>
-                                            <div class="title-info">
-                                                    <span class="product-title">
-                                                        The Post Grid Pro
-                                                    </span>
-                                                    <span class="subtitle">
-                                                        WordPress Plugin
-                                                    </span>
-                                                    <span class="price-product">$15</span>
-                                            </div>
-                                            <div class="assessment-product">
-                                                    <span class="circle"></span>
-                                                    <span>PsdBosS</span>
-                                                    <div class="stars">
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <span class="product-evaluation">05</span>
-                                                    </div>
-                                            </div>		
-                                    </div>
-                        </div>    
-                    </a>
-                    <a href="#" class="product-details">
-                        <div class="card-product">
-                            <div class="product-information">
-                                <div class="foto-product" src alt=""></div>
-                                    <div class="title-info">
-                                            <span class="product-title">
-                                                Food Menu
-                                            </span>
-                                            <span class="subtitle">
-                                                WordPress Plugin
-                                            </span>
-                                            <span class="price-product">$20</span>
-                                    </div>
-                                    <div class="assessment-product">
-                                            <span class="circle"></span>
-                                            <span>Manilip</span>
-                                            <div class="stars">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span class="product-evaluation">05</span>
-                                            </div>
-                                    </div>		
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-details">
-                        <div class="card-product">
-                            <div class="product-information">
-                                <div class="foto-product" src alt=""></div>
-                                    <div class="title-info">
-                                            <span class="product-title">
-                                                Imac Mockup
-                                            </span>
-                                            <span class="subtitle">
-                                                Psd Template
-                                            </span>
-                                            <span class="price-product">$12</span>
-                                    </div>
-                                    <div class="assessment-product">
-                                            <span class="circle"></span>
-                                            <span>Lolypop</span>
-                                            <div class="stars">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span class="product-evaluation">05</span>
-                                            </div>
-                                    </div>		
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-details">
-                        <div class="card-product">
-                            <div class="product-information">
-                                <div class="foto-product" src alt=""></div>
-                                    <div class="title-info">
-                                            <span class="product-title">
-                                                Gymedge
-                                            </span>
-                                            <span class="subtitle">
-                                                Joomla Template
-                                            </span>
-                                            <span class="price-product">$45</span>
-                                    </div>
-                                    <div class="assessment-product">
-                                            <span class="circle"></span>
-                                            <span>Micrsof</span>
-                                            <div class="stars">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span class="product-evaluation">05</span>
-                                            </div>
-                                    </div>		
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-details">
-                        <div class="card-product">
-                            <div class="product-information">
-                                <div class="foto-product" src alt=""></div>
-                                    <div class="title-info">
-                                            <span class="product-title">
-                                                The Post Grid Pro
-                                            </span>
-                                            <span class="subtitle">
-                                                WordPress Plugin
-                                            </span>
-                                            <span class="price-product">$19</span>
-                                    </div>
-                                    <div class="assessment-product">
-                                            <span class="circle"></span>
-                                            <span>Raklouse</span>
-                                            <div class="stars">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span class="product-evaluation">05</span>
-                                            </div>
-                                    </div>		
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-details">
-                        <div class="card-product">
-                            <div class="product-information   wrapp-lightning lightning ">
-                                <div class="foto-product" src alt=""></div>
-                                    <div class="title-info">
-                                            <span class="product-title">
-                                                    Doll Face
-                                            </span>
-                                            <span class="subtitle">
-                                                Illsatration
-                                            </span>
-                                            <span class="price-product">$10</span>
-                                    </div>
-                                    <div class="assessment-product">
-                                            <span class="circle"></span>
-                                            <span>Mikc Art</span>
-                                            <div class="stars">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span class="product-evaluation">05</span>
-                                            </div>
-                                    </div>		
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-details">
-                        <div class="card-product">
-                            <div class="product-information">
-                                <div class="foto-product" src alt=""></div>
-                                    <div class="title-info">
-                                            <span class="product-title">
-                                                Designer Mockup
-                                            </span>
-                                            <span class="subtitle">
-                                                PsdTemplate
-                                            </span>
-                                            <span class="price-product">$10</span>
-                                    </div>
-                                    <div class="assessment-product">
-                                            <span class="circle"></span>
-                                            <span>ThemeLol</span>
-                                            <div class="stars">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span class="product-evaluation">05</span>
-                                            </div>
-                                    </div>		
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="wordPress" id="wordPress">
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information  wrapp-lightning lightning">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    The Post Grid Pro
-                                                </span>
-                                                <span class="subtitle">
-                                                    WordPress Plugin
-                                                </span>
-                                                <span class="price-product">$15</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>PsdBosS</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                         </a>
-                         <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Food Menu
-                                                </span>
-                                                <span class="subtitle">
-                                                    WordPress Plugin
-                                                </span>
-                                                <span class="price-product">$20</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Manilip</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    The Post Grid Pro
-                                                </span>
-                                                <span class="subtitle">
-                                                    WordPress Plugin
-                                                </span>
-                                                <span class="price-product">$19</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Raklouse</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                         </a>
-                </div>
-                <div class="jomla" id="jomla">
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Gymedge
-                                                </span>
-                                                <span class="subtitle">
-                                                    Joomla Template
-                                                </span>
-                                                <span class="price-product">$45</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Micrsof</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Gymedge
-                                                </span>
-                                                <span class="subtitle">
-                                                    Joomla Template
-                                                </span>
-                                                <span class="price-product">$45</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Micrsof</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                      </a>
-                </div>
-                <div class="plugins" id="plugins">
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Imac Mockup
-                                                </span>
-                                                <span class="subtitle">
-                                                    Psd Template
-                                                </span>
-                                                <span class="price-product">$12</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Lolypop</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Designer Mockup
-                                                </span>
-                                                <span class="subtitle">
-                                                    PsdTemplate
-                                                </span>
-                                                <span class="price-product">$10</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>ThemeLol</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                        </a>
-                </div>
-                <div class="component" id="component">
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Gymedge
-                                                </span>
-                                                <span class="subtitle">
-                                                    Joomla Template
-                                                </span>
-                                                <span class="price-product">$45</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Micrsof</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                          </a>
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    The Post Grid Pro
-                                                </span>
-                                                <span class="subtitle">
-                                                    WordPress Plugin
-                                                </span>
-                                                <span class="price-product">$19</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Raklouse</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                         </a>
-                </div>
-                <div class="pcd" id="pcd">
-                        <a href="#" class="product-details">                    
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Imac Mockup
-                                                </span>
-                                                <span class="subtitle">
-                                                    Psd Template
-                                                </span>
-                                                <span class="price-product">$12</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>Lolypop</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="product-details">
-                            <div class="card-product">
-                                <div class="product-information">
-                                    <div class="foto-product" src alt=""></div>
-                                        <div class="title-info">
-                                                <span class="product-title">
-                                                    Designer Mockup
-                                                </span>
-                                                <span class="subtitle">
-                                                    PsdTemplate
-                                                </span>
-                                                <span class="price-product">$10</span>
-                                        </div>
-                                        <div class="assessment-product">
-                                                <span class="circle"></span>
-                                                <span>ThemeLol</span>
-                                                <div class="stars">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span class="product-evaluation">05</span>
-                                                </div>
-                                        </div>		
-                                </div>
-                            </div>
-                        </a>
-                </div>
-                <div class="more-items">
-                        <button class="new-items"><a href="">All New items</a></button>
-                        <button class="new-items"><a href="">Popular items</a></button>
-                </div>
-            </div>  
-        </div> 
-        <div class="you-choose">
-               
-        </div>
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
