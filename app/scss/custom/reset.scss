@@ -24,6 +24,7 @@
   }
   a:hover, a:active{
     text-decoration: none;
+    color: inherit;
   }
   ul{
     list-style: none;
@@ -38,3 +39,6 @@
     border:none;
     cursor:pointer;
   }
+ button:focus{
+   outline: none;
+ }

@@ -9,7 +9,6 @@ var autoprefixer = require('autoprefixer');
 var clean = require('gulp-clean');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
-const tinypng = require ('gulp-tinypng');
 // Static server
 gulp.task('browser', function() {
     browserSync.init({

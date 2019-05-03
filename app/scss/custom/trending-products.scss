@@ -1,0 +1,61 @@
+@import "../_variabels";
+@import "../_mixins";
+
+.trending-products * .product-details{
+min-width: 0;
+max-width: 40px;
+max-width:95%;
+
+}
+.trending-products * .wrapp-lightning::before{
+
+    left: -5%;
+    top: -10%;
+}
+
+.trending-products{
+    padding-top: 121px;
+    padding-bottom: 121px;
+    overflow: hidden;
+    }     
+ 
+    .slick-dots li button:before{
+        font-family: 'slick';
+        font-size: 0px;
+        line-height: 0px;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        content: '•';
+        color: transparent;
+        -webkit-font-smoothing: antialiased;
+      }
+      .slick-dots li button{
+        background:#e7e7e7;
+        border-radius:50%;
+        color:transparent;
+        height: 7px;
+        width: 7px;
+        border: 1px solid #afafaf;
+        color: transparent;
+      }
+      .slick-dots li.slick-active button{
+        height: 7px;
+        width: 7px;
+        background-color:#9cc254;
+      }
+      .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        margin: 0 7px;
+        padding: 0;
+        cursor: pointer;
+      }
+      .slick-dots li:last-child{
+        display: none;
+      }
+  

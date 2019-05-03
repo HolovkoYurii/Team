@@ -143,38 +143,44 @@
     position: absolute;
     top: 11px;
     left: 14px;
-  } 
+  }   
   .all{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    @include flex-wrap;
+   } 
  .wordPress{
-   display:flex; 
-   justify-content: space-around;
+  @include flex-wrap;
+  .product-details{
+    width: 100%;
+  }
  }
  .jomla{
-  display:flex;
-  justify-content: space-around;
-
+  @include flex-wrap;
+  .product-details{
+    width: 100%;
+  }
  }
  .plugins{
-  display:flex;
-  justify-content: space-around;
+  @include flex-wrap;
+  .product-details{
+    width: 100%;
+  }
 
  }
  .component{
-  display:flex;
-  justify-content: space-around;
+  @include flex-wrap;
+  .product-details{
+    width: 100%;
+  }
 
  }
  .pcd{
-  display:flex;
-  justify-content: space-around;
-
- }
+  @include flex-wrap;
+  .product-details{
+    width: 100%;
+  }
  .more-items{
-  text-align: center;
+  display:flex;
+  justify-content: center;
   margin-top: 46px;
  }
  .new-items{
@@ -199,3 +205,4 @@
 
 
  
+  } 
