@@ -91,6 +91,11 @@ form span{
     .welcome-search{
         max-width: 530px;
     }
+  
+
+}
+.welcome-search::placeholder{
+    color:#95a2ac;
 }
 
  @media(max-width: 590px){
