@@ -40,6 +40,23 @@
         margin-bottom: 40px;
     }
     /* /baner */
+    /* product-details */
+    .wrapp-button{
+        flex-direction: column;
+    }
+        .wrapp-button .btn-product-details:first-child{
+            margin-bottom:10px;
+        }
+        .wrapp-button .btn-product-details:nth-child(2) {
+            margin-bottom:10px;
+        }
+    
+.product-details-information .container{
+    flex-direction: column;
+    align-items:center;
+ }
+    /* /product-details */
+
 
 }
 @media(max-width:767px){
@@ -62,6 +79,9 @@
      }
     } 
 /* /release-products */
+
+
+
 
 }
 
