@@ -1,0 +1,246 @@
+@import "../_variabels";
+@import "../_mixins";
+
+footer {
+    width: 100%;
+                            /* footer */
+    background-color: #263238;
+  }
+  .subfooter-top {
+    width: 100%;
+    border-bottom: 1px solid #b0bec5;  /* upper subfooter */
+    display: flex;
+    justify-content: center;
+  }
+  .default-container-footer  {
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+      
+    }
+  .about {
+    width: 28.125%;
+    margin-right: 30px;                                /* Block "About" */
+  }
+  .title-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;                           
+    font-size: 22px;
+    color: #ffffff;
+    padding-top: 120px;
+  }
+    
+   .title-footer::after {
+      content: '';
+      display: block;
+      background-color: #8BC34A;                /* Line */
+      margin-top: 25px;
+      margin-bottom: 30px;
+      width: 50px;
+      height: 3px;
+  }
+  .text-footer {
+      text-align: left;
+      font-family: 'Roboto', sans-serif;             /* Text */
+      font-size: 15px;
+      font-weight: 400;
+      color: #b0bec5;
+      margin-bottom: 30px;	
+  }
+  .adress {
+    display: flex;
+    flex-direction: row;
+  }
+  .fas.fa-map-marker-alt {
+  color: #8BC34A;                       /* Icon marer in a map */
+  }
+  
+  .contact {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 14px;                       /* Contact informaton */
+      color: #ffffff;
+      display: inline-block;
+      margin-left: 15px;
+  }
+  .fas.fa-phone {
+      color: #8BC34A;                 /* color for phone */
+    }   
+      .fas.fa-phone {
+      transform: rotateY(180deg);/* Icon phone */
+  }
+
+  .phone {
+      
+      margin-top: 10px;                  /* Block for Icon phone  */
+      padding-bottom: 100px;
+  }
+  
+  .join {
+    width: 22.9166%;
+    margin-right: 30px;             /* block "Join" */
+  }
+  .fas.fa-angle-right {
+    color: #8BC34A;
+    font-size: 15px;  
+  }
+  .list {
+      color: #b7c3c8;
+      font-size: 15px;
+      font-weight: normal;
+      font-family: 'Roboto', sans-serif;    /* Features of list */
+      margin-bottom: 25px;
+      margin-left: 15px;
+  }
+  .join {
+		li {
+		margin-bottom: 15px;        /* margins between li */
+		}
+  }
+  .help {
+    width: 20.8333%; 
+    margin-right: 30px;       /* block help */
+  }
+  .help {
+		li {
+		margin-bottom: 15px;         /* margins between li */
+    }
+  }
+  .follow {
+    width: 28.125%; 
+                   /* Block "Follow" */
+  }
+  .sprite {
+    width: 170px;
+    display: flex;                           /* Container for sprite */
+    justify-content: space-between;
+	margin-bottom: 50px;
+  }
+  .icon {
+    display: inline-block;
+  }
+  .icon-facebook {
+    background-image: url(../img/sprite.png);
+    background-position: -68px -37px;
+    width: 28px;
+    height: 28px;
+  }
+  .icon-twitter {
+    background-image: url(../img/sprite.png);
+    background-position: -56px -74px;
+    width: 28px;
+    height: 28px;
+  }
+  .icon-youtoobe {
+    background-image: url(../img/sprite.png);
+    background-position: -102px 0px;
+    width: 28px;
+    height: 28px;
+  }
+  .icon-pinterest {
+    background-image: url(../img/sprite.png);
+    background-position: -28px -74px;
+    width: 28px;
+    height: 28px;
+  }
+  .icon-in {
+    background-image: url(../img/sprite.png);
+    background-position: -0px -74px;
+    width: 28px;
+    height: 28px;
+  }
+  .newsletter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;                           
+    font-size: 22px;                        /* features of newsletter */
+    color: #ffffff;
+    margin-top: 40px;
+	  margin-bottom: 20px;
+  }
+  .form-btn-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-footer {
+    height: 40px;          /* Block for form */
+  }
+  .form-control1 {
+    width: 215px;
+    height: 40px;
+    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2f3c43;           /* Form */
+    border-left: 1px solid #000101;
+    border-top: 1px solid #000101;
+    color: #697378;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .btn-footer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;             /* button */
+    align-items: center;
+    background-color: #8BC34A;
+  }
+  .fa-location-arrow {
+    color: #fff;
+  }
+  
+  .text-subfooter-bottom {
+    font-size: 15px;
+    color: #919699;
+    padding-top: 27px;
+    padding-bottom: 35px;
+    font-family: 'Roboto', sans-serif;        /* Text in subfooter */
+    font-weight: 400;
+    text-align: center;
+    display: block; 
+  }
+  @media (max-width: 767px) {
+    .about {
+      width: 270px;
+      
+    }
+    .title-footer {
+      padding-top: 50px;
+    }
+    .join {
+      width: 220px;
+  }
+  .help {
+      width: 200px;
+      margin-bottom: 50px;
+  }
+  .follow {
+      width: 270px; 
+  }
+  .default-container-footer { 
+    flex-wrap: wrap;
+}
+.phone {
+  padding-bottom: 0px;
+  }
+}
+@media (max-width: 548px) {
+  .coll-xs-12 {
+      width: 100%;
+  }
+  .title-footer {
+    padding-top: 50px;
+}
+.help {
+  width: 100%;
+  margin-bottom: 0px;
+}
+.follow {
+  width: 100%;
+  margin-bottom: 70px;
+}
+}
+  
+  
