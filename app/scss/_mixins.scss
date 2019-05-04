@@ -1,10 +1,19 @@
 @mixin default-container {
     max-width: 1170px;
     margin: auto;
-    
-}
+
+}   
 @mixin flex-center () {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin coll-4 () {
+    width: 33.333333%;             /* Width of the column for 4/12 part of the page */ 
+}
+	
+@mixin flex-wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
