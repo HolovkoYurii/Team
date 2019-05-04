@@ -13,9 +13,142 @@
         <link rel="stylesheet" href="css/allstyle.min.css">      
     </head>
     <body>
-        <header>
+         <!-- Modal -->
+        <!-- block login -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" 
+            role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close"
+                            data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title"
+                        id="exampleModalCenterTitle">Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-footer-container">
+                            <!-- modal-body-fawesom-name -->
+                            <form action="">
+                                <span class="modal-body-fawesom-name">
+                                    <input type="text" class="modal-body-input" placeholder="Name">
+                                </span>
+                            </form>
+                            <!-- / modal-body-fawesom-name -->
+                            
+                            <!-- modal-body-fawesom-password -->
+                            <form action="">
+                                <span class="modal-body-fawesom-password">
+                                    <input type="password" class="modal-body-input" placeholder="Password">
+                                </span>
+                            </form>
+                            <!-- / modal-body-fawesom-password -->
+                        </div>
+                    </div>
+                    <div class="modal-footer-all">
+                        <div class="modal-body-footer-container">
+                            <div class="modal-footer-btn">
+                                <button type="button" class="modal-btn"
+                                    data-dismiss="modal">Submit
+                                </button>
+                                <button type="button" class="modal-btn-primary ">
+                                    <i class="fas fa-edit"></i>
+                                    <span>Create an account</span>
+                                </button>
+                            </div>
+                            <div class="modal-footer-password">
+                                <a href="">Lost password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / block login -->
+      <!-- / Modal -->
 
+        <header>
+            <div class="menu-top">
+                <div class="menu-logo">
+                    <a href=""><img src="./img/logo.png" alt="site logo"></a>
+                </div>
+                <div class="menu-help">
+                    <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
+                </div>
+                <div class="menu-icon">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    <span class="menu-icon-number">8</span>
+                </div>
+                <div class="menu-top-button">
+                    <a href="" class="menu-top-button-l" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+                    <a href="" class="menu-top-button-r">Register</a>
+                </div>
+            </div>
+            <!-- / menu-top -->
+            <!-- menu navbar -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WordPress</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Joomla</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">PSD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Plugins</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Components</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- / menu navbar -->
         </header>
+     <!-- / .HEADER -->
+        <div class="welcome">
+            <div class="welcome-background">
+                <div class="welcome-container">
+                    <h1>
+                        Welcome To Foxtar Market Place!
+                    </h1>
+                    <p class="welcome-paragraf">
+                        Premium WordPress Themes, Web Templates and Many More ...
+                    </p>
+                    <form action="">
+                        <span>
+                            <input type="text" class="welcome-search"  placeholder="Search Your Keywords...">
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.welcome -->
         <!-- product-details-information -->
         <div class="product-details-information">
             <div class="container">
@@ -251,7 +384,102 @@
         <!-- product-details-information -->
         </div>
         <footer>
+            <div class="subfooter-top">
+                <div class="default-container-footer">
+                    <div class="about coll-xs-12">
+                        <h3 class="title-footer">About Company</h3>
+                        <p class="text-footer">Praesent vel rutrum purus. Nam vel dui eu 
+                            risus duis dignissim digniSuspen 
+                            disse.Fusce sit amet urna iat.Praesent vel 
+                            rutrum purus. </p>
+                        <div class="adress">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <p class="contact">PO Box 16122 Collins Street West 
+                                    Victoria 8007 Australia </p>
+                        </div>
+                        <div class="phone">
+                            <span><i class="fas fa-phone"></i></span>
+                            <p class="contact">+61 3 8376 6284</p>
+                        </div>
+                    </div>        
+                    <div class="join coll-xs-12">
+                        <h3 class="title-footer">Join Our Community</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Home</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Forums</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Become an author</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Community Meetups</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Become an Affiliate</span>
+                            </li>
+                           </ul>
 
+                    </div>
+                    <div class="help coll-xs-12">
+                        <h3 class="title-footer">Need help</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Help Center</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Forxtar Market Terms</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Author terms</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Forxtar Licenses </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Contact us</span>
+                            </li>
+                           </ul>
+                    </div>
+                    <div class="follow coll-xs-12">
+						<h3 class="title-footer">Follow Us On</h3>
+                        <nav class="sprite">
+                            <a href="" class="icon icon-facebook"></a>
+                            <a href="" class="icon icon-twitter"></a>
+                            <a href="" class="icon icon-youtoobe"></a>
+                            <a href="" class="icon icon-pinterest"></a>
+                            <a href="" class="icon icon-in"></a>
+                            
+                            
+                        </nav>
+                        <h3 class="newsletter">Newsletter Sign Up</h3>
+                        <div class="form-btn-footer">
+                            <form action="" class="form-footer">
+                                <input type="text" name="user-name" placeholder="E-mail Address" class="form-control1">
+                            </form>
+                            
+                            <div class="btn-footer">
+                                <i class="fas fa-location-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter-bottom">
+                <span class="text-subfooter-bottom">&copy;  2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+            </div>          
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
