@@ -1,5 +1,5 @@
-@mixin default-container () {
-    width: 1170px;
+@mixin default-container {
+    max-width: 1170px;
     margin: auto;
 
 }   
