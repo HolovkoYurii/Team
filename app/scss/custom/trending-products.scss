@@ -2,9 +2,7 @@
 @import "../_mixins";
 
 .trending-products * .product-details{
-min-width: 0;
-max-width: 40px;
-max-width:95%;
+ max-width:95%;
 
 }
 .trending-products * .wrapp-lightning::before{

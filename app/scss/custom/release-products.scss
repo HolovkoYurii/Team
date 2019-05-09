@@ -4,6 +4,9 @@
   background:rgb(244, 246, 245);
   padding-top: 121px;
   padding-bottom: 112px;
+   .container{
+    max-width: 1920px;
+   }
 } 
 h2{   
   font-family: 'Roboto', sans-serif;
@@ -19,6 +22,7 @@ h2{
     display:flex;
     justify-content: center;
     padding-bottom: 59px;
+    flex-wrap: wrap;
 }  
 .our-work li{background:#fff;   
   padding:13px 21px;
@@ -31,9 +35,7 @@ h2{
 .our-work li{  
   margin-right: 6px; 
 }   
-.our-work li:last-child{  
-    margin:0;           
-}     
+ 
 .product-details{
     min-width: 332px;
     max-width: 430px;

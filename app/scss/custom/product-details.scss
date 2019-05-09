@@ -117,8 +117,11 @@
      .social-networks .fa-twitter{
          background: #81b3f3;
      }
-     .social-networks .fa-linkedin{
-     background: #8e9dd8;
+     .social-networks  .fa-linkedin-square{
+     background: #5b70ca;
+        &::after{
+            content:"\f0e1";
+        }
      
      }
      .social-networks .fa-pinterest-p{
@@ -199,6 +202,11 @@
       display: flex;
       margin-bottom:28px;
       box-shadow: 1px 1px 1px 0px #dadfe2;
+        &:hover{
+            box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+            transition: all 0.5s ease;
+
+      }
 
   }
   .foto-product-small{
@@ -460,11 +468,14 @@
     padding: 26px 31px 29px 31px;
     border: solid 1px #ddd;
 
+
     li{
         font-size:14px;
-        font-weight:700;
+        font-weight:500;
         color:#2e353a;
         margin-bottom:18px;
+        font-family: 'Roboto', sans-serif;
+
     }
     li:last-child{
         margin-bottom:0;

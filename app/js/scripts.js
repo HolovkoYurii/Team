@@ -11,7 +11,7 @@ $( function() {
       autoplaySpeed:5000,	
       infinite: true,
       slidesToShow: 4,
-      slidesthoshow:4,
+      slidesthoshow:0,
       
     });
   });
