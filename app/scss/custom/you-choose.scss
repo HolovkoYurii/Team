@@ -6,6 +6,12 @@
     background-color: #263238;     /* Block "You choose" */
     display: flex;
     justify-content: center;
+    .title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;                               /* Title */
+        color: #ffffff;
+    }
 }
 .container-you-choose {
     max-width: 1170px;
@@ -17,12 +23,7 @@
     padding-top: 100px;      /* Block title "You choose" */ 
     text-align: center;
 }
-.title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 36px;                               /* Title */
-    color: #ffffff;
-}
+
 .row-you-choose {
     padding-bottom: 120px;
     display: flex;                         /* Row */
@@ -89,7 +90,7 @@
         background-color: #b5b5b5;             /* Color for Round */
         border-color: #b5b5b5;
     }
-        .subtitle {
+    .you-choose  .subtitle {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 24px;                               /* Title */
