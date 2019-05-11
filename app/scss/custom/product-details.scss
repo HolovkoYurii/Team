@@ -2,7 +2,12 @@
 @import "../_mixins";
 
 .content{
-    max-width:870px;
+    display: flex;
+    justify-content: space-between;
+    .main-info{
+        max-width:870px;
+    }
+    
 }
 .product-details-information{
     background:#f4f6f5;
@@ -42,14 +47,13 @@
     max-width: 1200px;
     margin: auto;
     padding-bottom: 95px;
-    justify-content: space-between;
-    display: flex;
+    
 
 }
 .breadcrumb{
     background:#f4f6f5;
-    padding-bottom:39px;
-    padding-top:0;
+    padding:0 0 39px 0px;
+    
     font-family: 'Roboto', sans-serif;
     font-size:15px;
    
@@ -238,7 +242,6 @@
 /* sidebar */
 .sidebar{
     width: 270px;
-    margin-top: 77px;
     margin-left: 15px;
 
     h4{
