@@ -1,0 +1,49 @@
+@import "../_variabels";
+@import "../_mixins";
+
+
+.main-menu{
+    .navbar-light {
+        background-color: #263238;
+        height: 60px;
+        padding: 0px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        color: $color-text;
+        z-index: 3;
+        .container{
+            max-width: 1170px;
+            padding-left: 10px;
+            .navbar-toggler {
+                background-color: #ffffff;
+                margin-left: 34px;
+            }
+            .navbar-nav{
+                .nav-link{
+                    padding: 0px;
+                    color: $color-text;
+                }
+                li + li{
+                    margin-left: 43px;
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .main-menu{
+        .navbar-light{
+            .container{
+                .navbar-collapse{
+                    li{
+                    margin-left: 43px;
+                    }
+                }
+            }
+        }
+    }
+}
+
