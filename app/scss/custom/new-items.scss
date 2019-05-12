@@ -179,13 +179,7 @@
 }
 .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single{
     background:none;
-    color:#7e8f9a;
-    &::before{
-        content:"sdf";
-        color:red;
-        position: absolute;
-    }
-    
+    color:#7e8f9a;   
 }
 .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
     display:none;
@@ -199,3 +193,4 @@
 .irs--round {
     margin-bottom:56px;
 }
+
