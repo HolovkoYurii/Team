@@ -4,6 +4,11 @@
     .product-details{
         width: 50%;
     }
+    .main-info-wrapp{
+        .product-details{
+            width: 48%;
+        }
+    }
 
     
 /* /release-products */
@@ -30,6 +35,15 @@
 
 @media(max-width: 991px){
 /* release-products */
+.main-info{
+
+.main-info-wrapp{
+   
+       .product-details{
+        width: 70%;
+    }
+}
+}
     .product-details{
         width: 100%;
     }
