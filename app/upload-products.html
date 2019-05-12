@@ -16,66 +16,100 @@
         <link rel="stylesheet" href="css/allstyle.min.css">      
     </head>
     <body> 
-        <header>
+        <!-- HEADER -->
+        <header class="header-upload-products">
             <div class="menu-top">
                 <div class="menu-logo">
                     <a href=""><img src="./img/logo.png" alt="site logo"></a>
                 </div>
-                <div class="menu-help-upload">
+                <div class="menu-help">
                     <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
                 </div>
-                <div class="menu-icon">    
-                    <a href=""><i class="far fa-bell"></i></a>
-                    <span class="menu-icon-number">8</span>
-                </div>
-                <div class="menu-icon">    
-                    <a href=""><i class="far fa-envelope"></i></a>
-                    <span class="menu-icon-number menu-icon-number-envelope">5</span>
-                </div>
                 <div class="menu-icon">
+                    <a href=""><i class="far fa-bell"></i></a>
+                    <span class="menu-icon-number position-icon-first">8</span>
+                    <a href=""><i class="far fa-envelope"></i></a>
+                    <span class="menu-icon-number position-icon-second">5</span>
                     <a href=""><i class="fas fa-shopping-cart"></i></a>
-                    <span class="menu-icon-number">8</span>
+                    <span class="menu-icon-number position-icon-third">8</span>
+                    <a href=""></a>
                 </div>
-                <div class="menu-top-button">
-                    <a href="" class="menu-top-button-r">Register</a>
+                <div class="menu-customer-btn">
+                    <div class="menu-customer">
+                        <p>Mike Hussy <span class="menu-customer-fontawesom"><i class="fas fa-angle-down"></i></span>
+                        </p>
+                        <span>$171.00</span>
+                    </div>
+                    <div class="menu-top-button">
+                        <a href="" class="menu-top-button-l" data-toggle="modal"
+                            data-target="#exampleModalCenter">Logout</a>
+                    </div>
                 </div>
             </div>
             <!-- / menu-top -->
-            <div class="menu-nav">
-                <ul class="menu-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">WordPress</a></li>
-                    <li><a href="">Joomla</a></li>
-                    <li><a href="">PSD</a></li>
-                    <li><a href="">Plugins</a></li>
-                    <li><a href="">Components</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Help</a></li>
-                </ul>
+            <!-- navbar menu -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WordPress</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Joomla</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">PSD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Plugins</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Components</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- / menu-nav -->
+            <!-- / navbar menu -->
         </header>
         <!-- / .HEADER -->
-        <div class="welcome">
-            <div class="welcome-background welcome-background-upload">
-            <div class="welcome-container">
-                <h1 class="welcome-title">
-                    Welcome To Foxtar Market Place!
-                </h1>
-                <p class="welcome-paragraf">
-                    Premium WordPress Themes, Web Templates and Many More ...
-                </p>
-                <form action="">
-                    <input type="text" class="welcome-search" placeholder="Search Your Keywords...">
-                    <a href=""><i class="fas fa-search"></i></a>
-                </form>
-            </div>
+        <!-- welcome-upload-products -->
+        <div class="welcome-upload-products">
+            <div class="background">
+                <div class="container">
+                    <h1>
+                        Premium WordPress Themes, Web Templates and Many More ...!
+                    </h1>
+                    <form action="">
+                        <span>
+                            <input type="text" class="search" placeholder="Search Your Keywords...">
+                        </span>
+                    </form>
+                </div>
             </div>
         </div>
-        <!-- /.welcome -->
-        <div class="upload-product">
+        <!-- /.welcome-upload-products -->
+            <div class="upload-product">
             <div class="container">
                 <div class="home-block">
                     <span class="home">Home</span><span class="home">-</span><span class="upload">Upload Product</span>

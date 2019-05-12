@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="css/allstyle.min.css">      
     </head>
     <body>
-        <header>
+        <!-- HEADER -->
+        <header class="header-product-details">
             <div class="menu-top">
                 <div class="menu-logo">
                     <a href=""><img src="./img/logo.png" alt="site logo"></a>
@@ -21,12 +22,27 @@
                 <div class="menu-help">
                     <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
                 </div>
-                <div class="menu-top-button">
-                    <a href="" class="menu-top-button-r">Register</a>
+                <div class="menu-icon">
+                    <a href=""><i class="far fa-bell"></i></a>
+                    <span class="menu-icon-number position-icon-first">8</span>
+                    <a href=""><i class="far fa-envelope"></i></a>
+                    <span class="menu-icon-number position-icon-second">5</span>
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    <span class="menu-icon-number position-icon-third">8</span>
+                    <a href=""></a>
+                </div>
+                <div class="menu-customer-btn">
+                    <div class="menu-customer">
+                        <p>Mike Hussy <span class="menu-customer-fontawesom"><i class="fas fa-angle-down"></i></span></p>
+                        <span>$171.00</span>
+                    </div>
+                    <div class="menu-top-button">
+                        <a href="" class="menu-top-button-l" data-toggle="modal" data-target="#exampleModalCenter">Logout</a>
+                    </div>
                 </div>
             </div>
             <!-- / menu-top -->
-            <!-- menu navbar -->
+            <!-- navbar menu -->
             <div class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,27 +84,26 @@
                     </div>
                 </div>
             </div>
-            <!-- / menu navbar -->
+            <!-- / navbar menu -->
         </header>
      <!-- / .HEADER -->
-        <div class="welcome">
-            <div class="welcome-background">
-                <div class="welcome-container">
+     <!-- welcome-product-details -->
+        <div class="welcome-product-details">
+            <div class="background">
+                <div class="container">
                     <h1>
-                        Welcome To Foxtar Market Place!
+                        Premium WordPress Themes, Web Templates and Many More ...!
                     </h1>
-                    <p class="welcome-paragraf">
-                        Premium WordPress Themes, Web Templates and Many More ...
-                    </p>
                     <form action="">
                         <span>
-                            <input type="text" class="welcome-search"  placeholder="Search Your Keywords...">
+                            <input type="text" class="search"  placeholder="Search Your Keywords...">
                         </span>
                     </form>
                 </div>
             </div>
         </div>
-        <!-- /.welcome -->
+        <!-- /.welcome-product-details -->
+
         <!-- product-details-information -->
         <div class="product-details-information">
             <div class="container">
