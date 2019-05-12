@@ -8,6 +8,11 @@
     justify-content: center;
     align-items: center;
 }
+@mixin flex-column{
+display: flex;
+flex-direction: column;
+}
+
 @mixin coll-4 () {
     width: 33.333333%;             /* Width of the column for 4/12 part of the page */ 
 }

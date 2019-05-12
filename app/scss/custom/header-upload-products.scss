@@ -1,0 +1,154 @@
+@import "../_variabels";
+@import "../_mixins";
+
+
+.header-upload-products{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    .menu-top{
+        @include default-container;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 27px 0;
+        .menu-help{
+            margin-left: 295px;
+            font-size: 15px;
+            line-height: 24px;
+            p{
+                color: #e74c3c;
+                span{
+                    color: #546e7a;
+                }
+            }
+        }
+        .menu-icon{
+            @include flex-center;
+            margin-left: 14px;
+            position: relative;
+
+                a{
+                @include flex-center;
+                width: 34px;
+                height: 34px;
+                font-size: 14px;
+                line-height: 24px;
+                background: #f5f5f5;
+                border-radius: 50%;
+                color: #a0a0a0;
+                margin-left: 16px;
+                }
+                .menu-icon-number{
+                    @include flex-center;
+                    position: absolute;
+                    font-family: 'Open Sans', sans-serif;
+                    color: $color-text;
+                    font-size: 11px;
+                    line-height: 24px;
+                    border-radius: 50%;
+                    height: 18px;
+                    width: 18px;
+                }
+                .position-icon-first{
+                    background: #fcb322;
+                    top: -7px;
+                    right: 145px;
+                }
+                .position-icon-second{
+                    background: #f18023;
+                    top: -7px;
+                    right: 94px;
+                }
+                .position-icon-third{
+                    background: #95c85a;
+                    top: -7px;
+                    right: 43px;
+                }
+        }
+        .menu-customer-btn{
+            @include flex-center;
+            .menu-customer{
+                margin-left: 15px;
+                font-size: 14px;
+                line-height: 24px;
+                p{
+                    font-weight: 500;
+                    color: #222222;
+                    .menu-customer-fontawesom{
+                        margin-left: 13px;
+                        line-height: 24px;
+                        color:  #707070;
+                        cursor: pointer;
+                    }
+                }
+                span{
+                    font-weight: bold;
+                    color: #8bc34a;
+                }
+            }
+            /* - button decoration - */
+            .menu-top-button{
+                @include flex-center;
+                margin-left: 21px;
+                font-size: 12px;
+                line-height: 24px;
+                color:$color-text;
+                    .menu-top-button-l{
+                        padding: 11px 20px 10px 20px;
+                        background:#e74c3c;
+                        border-radius: 5px;
+                    }
+                    /* -/ button decoration - */
+            }
+        }
+    }
+}
+/* --- site adaptation --- */
+
+@media(max-width: 1170px){
+
+    .header-upload-products{
+        .menu-top{
+            .menu-logo{
+                margin-left: 10px;
+            }
+            .menu-help{
+                margin: auto;
+            }
+            .menu-top-button{
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 920px){
+
+    .header-upload-productss{
+        .menu-top{
+            @include flex-column;
+            .menu-help{
+                margin: 20px 0px 0px 0px;
+            }
+            .menu-icon{
+                margin-top: 20px;
+                margin-left: 0px;
+                a:first-child{
+                    margin-left: 0px;
+                }
+            }
+            .menu-customer-btn{
+                margin-top: 15px;
+                .menu-top-button{
+                    .menu-top-button-l{
+                        padding: 7px 32px 10px;
+                        }
+                    }
+            }
+        }
+    }
+}
+
+
+
