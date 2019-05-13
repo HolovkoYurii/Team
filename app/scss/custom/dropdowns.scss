@@ -2,6 +2,9 @@
 @import "../_mixins";
 /* dropdown-user */
 .dropdown-user{
+    .dropdown-toggle::after{
+        display:none;
+    }
     li{
         margin-bottom:22px;
         &:last-child{
@@ -25,6 +28,7 @@
     }
     .dropdown-menu{
         padding:21px 0 28px 0;
+        border-radius:0;
        
     }   
     
@@ -33,6 +37,9 @@
 
 /* dropdown-basket */
 .dropdown-basket{
+    .dropdown-toggle::after{
+        display:none;
+    }
     .border-bottom{
         height: 1px;
         background:#dfdfdf;
@@ -73,7 +80,7 @@
     .dropdown-menu{
         padding: 20px 0px 14px 0px;
         width: 270px;
-      
+        border-radius:0;
     }
     
     .btn-dropdown{
