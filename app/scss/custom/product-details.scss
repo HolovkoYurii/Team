@@ -93,7 +93,7 @@
             background:#4d5a64;
         }
         .btn-product-details:nth-child(3){
-            background:#9cc254;
+            background:$default-color-green;
             margin:0;
 
         }
@@ -105,9 +105,7 @@
         height: 51px;
         font-size: 18px;
         color:#fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;        
         margin-right:3px;
         font-weight: 400;
        
@@ -150,7 +148,7 @@
    
     .nav-tabs .nav-link.active{
         background:none;
-        border-bottom: solid 3px #9cc254;
+        border-bottom: solid 3px $default-color-green;
     }
     .nav-tabs{
        background: #fff;
@@ -218,8 +216,7 @@
     min-width: 100px;
   }
   .product-info-small{
-      display: flex;
-      flex-direction: column;
+     @include flex-column;
       padding: 20px 30px 10px 21px;
       background:#fff;
 
@@ -231,7 +228,7 @@
     }
     .subtitle-small{
         font-size: 12px;
-        color:#9cc254;
+        color:$default-color-green;
         margin-bottom: 12px;
     }
     .price-product-small{
@@ -257,10 +254,8 @@
 }
 /* sidebar-product-price */
 .sidebar-product-price{
-    background:#fff;
-    padding: 26px 31px 29px 31px;
-    border: solid 1px #ddd;
-    margin-bottom: 30px;
+   @include sidebar-block;
+  
 
  
     h4::before{
@@ -285,7 +280,7 @@
 
     }
     .fa-caret-down{
-        color:#9cc254;
+        color:$default-color-green;
         padding-left:9px;
     }
 
@@ -298,13 +293,11 @@
       
     .btn-add-cart{
         height:49px;
-        background:#9cc254;
+        background:$default-color-green;
         color:#fff;
         font-size: 16px;
         font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;   
     }
     .btn-add-cart .fa{
         padding-right: 9px;
@@ -315,9 +308,7 @@
         color:#fff;
         font-size: 16px;
         font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;       
     }
    .btn-favourites::before{
        content:"\f08a ";
@@ -329,9 +320,7 @@
     color:#fff;
     font-size: 16px;
     font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;    
     margin-bottom:0;
 
    }
@@ -346,10 +335,8 @@
 
 /* sidebar-product-autor */
 .sidebar-product-autor{
-    background:#fff;
-    padding: 26px 31px 29px 31px;
-    border: solid 1px #ddd;
-    margin-bottom:30px;
+    @include sidebar-block;
+  
 
 
     .foto-profile{
@@ -363,8 +350,8 @@
         display: flex;
     }
     .wrapp-product-autor{
-        flex-direction: column;
-        display: flex;
+        @include flex-column;
+       
 
         span{
             font-size: 18px;
@@ -379,9 +366,7 @@
             color:#707070;
             border:solid 1px #d4d4d4;
             height: 28px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;            
             width: 92px;
             margin:none;
             margin-bottom:none;
