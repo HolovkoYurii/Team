@@ -38,7 +38,6 @@
 .main-info{
 
 .main-info-wrapp{
-   
        .product-details{
         width: 70%;
     }
@@ -145,4 +144,24 @@
     
    
 }
-
+@media(max-width:600px){
+    .all-new-items{
+        .sort span{
+            margin-right: 0;
+        }
+        .content{
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-info-wrapp{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .sidebar{
+        margin-bottom: 10px;
+    }
+}
+.tab-content>.active{
+    display: block;
+}
