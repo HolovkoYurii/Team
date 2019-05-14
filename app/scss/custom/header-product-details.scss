@@ -29,7 +29,7 @@
             margin-left: 14px;
             position: relative;
 
-                a{
+                .menu-icon-custom{
                 @include flex-center;
                 width: 34px;
                 height: 34px;
@@ -53,17 +53,17 @@
                 }
                 .position-icon-first{
                     background: #fcb322;
-                    top: -7px;
+                    top: -4px;
                     right: 145px;
                 }
                 .position-icon-second{
                     background: #f18023;
-                    top: -7px;
+                    top: -4px;
                     right: 94px;
                 }
                 .position-icon-third{
                     background: #95c85a;
-                    top: -7px;
+                    top: -4px;
                     right: 43px;
                 }
         }
@@ -136,8 +136,11 @@
             .menu-icon{
                 margin-top: 20px;
                 margin-left: 0px;
-                a:first-child{
+                &:first-child{
                     margin-left: 0px;
+                }
+                .menu-icon-custom{
+                    margin-left: 16px;
                 }
             }
             .menu-customer-btn{

@@ -136,6 +136,81 @@
     
 }
 /* /dropdown-basket */
+
+
+/* .dropdown-email */
+
+.dropdown-email{
+    .dropdown-menu{
+        width: 268px;
+        margin: auto;
+        border-radius: 0px;
+        padding: 0px;
+        line-height: 0.5;
+        border: 1px solid rgb(213,213,213);
+        background-clip: border-box;
+        .dropdown-item{
+            padding: 0px;
+            &:hover{
+                background-color: transparent;
+            }
+            .gray-square{
+                margin: 18px 20px 25px 21px;
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #d4d4d4;
+                border: 1px solid #b8cbe2;
+            }
+            .email-message{
+                display: inline-block;
+                vertical-align: top;
+                .email-name{
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #263238;
+                    margin-top: 24px;
+                }
+                .email-text{
+                    font-weight: 400;
+                    font-size: 11px;
+                    color: #84b743;
+                    margin-top: 9px;
+                }
+                .email-data{
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: #707070;
+                    margin-top: 11px;
+                    margin-bottom: 23px;
+                }
+                .email-data-color{
+                    color: #90a4ae;
+                }
+            }
+            .email-badge{
+                display: inline-block;
+                vertical-align: top;
+                color: #b0bec5;
+                .far-color{
+                    color: #ef6c00;
+                }
+                .fa-envelope{
+                    margin: 27px 0 0 60px;
+                }
+                .fa-reply{
+                    margin: 25px 0 0 37px;
+                }
+             }
+        }
+        .dropdown-divider{
+            margin: 0px;
+        }
+    }
+}
+/* / .dropdown-email */
+
 .dropdown-regular{
     .dropdown-menu{
         
@@ -147,3 +222,4 @@
         margin-left: 5px;
     }
 }
+
