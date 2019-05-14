@@ -2,8 +2,7 @@
 @import "../_mixins";
 
 
-
-.header-product-details{
+.header-upload-products{
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
     .menu-top{
@@ -101,7 +100,6 @@
                         border-radius: 5px;
                     }
                     /* -/ button decoration - */
-    
             }
         }
     }
@@ -110,7 +108,7 @@
 
 @media(max-width: 1170px){
 
-    .header-product-details{
+    .header-upload-products{
         .menu-top{
             .menu-logo{
                 margin-left: 10px;
@@ -127,7 +125,7 @@
 
 @media(max-width: 920px){
 
-    .header-product-details{
+    .header-upload-productss{
         .menu-top{
             @include flex-column;
             .menu-help{
