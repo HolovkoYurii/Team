@@ -2,14 +2,14 @@
 @import "../_mixins";
 
 
-.main-menu{
+.header-upload-products{
     .navbar-light {
         background-color: #263238;
         height: 60px;
         padding: 0px;
         font-weight: 500;
         font-size: 14px;
-        line-height: 30px;
+        line-height: 23px;
         color: $color-text;
         z-index: 3;
         .container{
@@ -34,7 +34,7 @@
 }
 
 @media(max-width: 992px){
-    .main-menu{
+    .header-upload-products{
         .navbar-light{
             .container{
                 .navbar-collapse{
