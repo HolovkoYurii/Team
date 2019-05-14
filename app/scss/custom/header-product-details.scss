@@ -29,7 +29,7 @@
             margin-left: 14px;
             position: relative;
 
-                a{
+                .menu-icon-custom{
                 @include flex-center;
                 width: 34px;
                 height: 34px;
@@ -66,45 +66,54 @@
                     top: -7px;
                     right: 43px;
                 }
+                .menu-icon-border{
+                    border: 1px solid rgb(195,221,222);
+                }
         }
         .menu-customer-btn{
             @include flex-center;
-            .menu-customer{
-                margin-left: 15px;
-                font-size: 14px;
-                line-height: 24px;
-                p{
-                    font-weight: 500;
-                    color: #222222;
-                    .menu-customer-fontawesom{
-                        margin-left: 13px;
-                        line-height: 24px;
-                        color:  #707070;
-                        cursor: pointer;
-                    }
-                }
-                span{
-                    font-weight: bold;
-                    color: #8bc34a;
-                }
+            .btn-dropdown-user{
+                text-align: left;
             }
-            /* - button decoration - */
-            .menu-top-button{
-                @include flex-center;
-                margin-left: 21px;
-                font-size: 12px;
-                line-height: 24px;
-                color:$color-text;
-                    .menu-top-button-l{
-                        padding: 11px 20px 10px 20px;
-                        background:#e74c3c;
-                        border-radius: 5px;
+
+                .menu-customer{
+                    margin-left: 15px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    p{
+                        font-weight: 500;
+                        color: #222222;
+                        .menu-customer-fontawesom{
+                            margin-left: 13px;
+                            line-height: 24px;
+                            text-align: left;
+                            color:  #707070;
+                            cursor: pointer;
+                        }
                     }
-                    /* -/ button decoration - */
-    
+                    span{
+                        font-weight: bold;
+                        color: #8bc34a;
+                    }
+                }
+                /* - button decoration - */
+                .menu-top-button{
+                    @include flex-center;
+                    margin-left: 21px;
+                    font-size: 12px;
+                    line-height: 24px;
+                    color:$color-text;
+                        .menu-top-button-l{
+                            padding: 11px 20px 10px 20px;
+                            background:#e74c3c;
+                            border-radius: 5px;
+                        }
+                        /* -/ button decoration - */
+        
+                }
             }
         }
-    }
+    
 }
 /* --- site adaptation --- */
 
@@ -135,9 +144,26 @@
             }
             .menu-icon{
                 margin-top: 20px;
-                margin-left: 0px;
-                a:first-child{
+                .menu-icon-custom:first-child{
                     margin-left: 0px;
+                }
+                .dropdown-email{
+                    margin-left: 26px;
+                }
+                .dropdown-basket{
+                    margin-left: 26px;
+                }
+                .menu-icon-custom{
+                    margin-left: 26px;
+                }
+                .position-icon-first {
+                    right: 174px;
+                }
+                .position-icon-second {
+                    right: 113px;
+                }
+                .position-icon-third {
+                    right: 52px;
                 }
             }
             .menu-customer-btn{
