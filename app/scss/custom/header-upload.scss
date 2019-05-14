@@ -1,0 +1,92 @@
+@import "../_variabels";
+@import "../_mixins";
+
+header{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+
+}
+.menu-top{
+    @include default-container;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px auto;
+}
+.menu-help-upload{
+    margin-left: 300px;
+    font-size: 15px;
+    p{
+        color: #e74c3c;
+        span{
+            color: #546e7a;
+            
+            
+        }
+    }
+}
+
+.menu-icon{
+    @include flex-center;
+    margin-left: 28px;
+    width: 34px;
+    height: 34px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    position: relative;
+    a{
+        color: #a0a0a0;
+    }
+}
+.menu-icon-number{
+    @include flex-center;
+    position: absolute;
+    top: -30%;
+    right: -4px;
+    background: $color-top;
+    color: $color-text;
+    font-size: 12px;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+
+    .menu-icon-number-envelope{
+        background: #e74c3c;
+    }
+
+}
+
+
+.menu-top-button{
+    margin-left: 21px;
+    font-size: 12px;
+    color:$color-text;
+}
+
+
+.menu-top-button-r{
+    background: #e74c3c;
+    padding: 12px 14px;
+    border-radius: 5px;
+}
+
+
+.menu-nav{
+    @include flex-center;
+    background: #263238;
+    height: 60px;
+    ul{
+        @include default-container;
+        @include flex-center;
+        justify-content: flex-start;
+        color: $color-text;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+.menu-nav li + li{
+    margin-left: 40px;
+}
+
+

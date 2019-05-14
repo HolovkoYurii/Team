@@ -3,7 +3,7 @@
 
 .you-choose {
     width: 100%;
-    background-color: #263238;     /* Block "You choose" */
+    background-color: $background-text;     /* Block "You choose" */
     display: flex;
     justify-content: center;
     .title {
@@ -24,11 +24,21 @@
     text-align: center;
 }
 
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;                               /* Title */
+    color: $color-text;
+}
+
 .row-you-choose {
     padding-bottom: 120px;
     display: flex;                         /* Row */
     flex-direction: row;
-	}
+    }
+    .row-block {
+        max-width: 370px;
+    }
 .coll {
                         /* Column */
     padding: 0 30px;
@@ -46,9 +56,7 @@
 	.coll-4 {
     @include coll-4 ()            /* Width of the column for 4/12 part of the page */ 
     }
-    .col-11 {
-        max-width: 370px;
-    }
+    
 	
     .col-5 {
     width: 41.666666%;            /* Width of the column for 5/12 part of the page */
@@ -90,48 +98,53 @@
         background-color: #b5b5b5;             /* Color for Round */
         border-color: #b5b5b5;
     }
-    .you-choose  .subtitle {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+
+        .subtitle {
+        @include default-text;
         font-size: 24px;                               /* Title */
         text-align: center;
         cursor: pointer;
         margin-bottom: 30px;
         display: block;
-        color: #ffffff;
+        color: $color-text
         }
-    
+        .text {
+            text-align: center;
+                         /* Text */
+            font-size: 15px;
+            @include default-text-400;
+            color: #b0bec5; 
+            cursor: pointer;
+        }
     .col-hover:hover {
 
         .round {
             background-color: #d4d4d4;             /* Hover */
         }
         .subtitle {
-            color: #8bc34a;
+            color: $hover;
+        }
+        .text {
+            color: $color-text;
         }
     }
-	.text {
-        text-align: center;
-        font-family: 'Roboto', sans-serif;             /* Text */
-        font-size: 15px;
-        font-weight: 400;
-        color: #b0bec5; 
+	
+    @media (max-width: 991px) {
+        .coll {
+            padding: 0 20px;
+        }
     }
-    @media (max-width: 767px) {
-        
-            .col-sm-chose {
-                width: 50%;
-            }
-            .coll-sm-12 {
-                width: 100%;
-            }
-            .coll-4+.coll-4 {
-                margin-left: 0px;
-            }      
-               
+    @media (max-width: 838px) {
         .row-you-choose {
-            flex-wrap: wrap;            /* Width of the column for 4/12 part of the page */ 
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+        
+    @media (max-width: 767px) {        
+        .row-you-choose {
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 }
 @media (max-width: 548px) {

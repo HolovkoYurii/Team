@@ -4,11 +4,11 @@
 .free-monthly {
                      /* Block "Free-monthly" */
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 .default-container-free-monthly  {
-  width: 1170px;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
 
@@ -26,13 +26,15 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 120px;
-    
   }
- 
+  .row-block-free {
+    max-width: 370px;
+    width: 370px;
+}
   .coll-4 {
     width: 33.333333%;            /* Width of the column for 4/12 part of the page */ 
     }
-    .coll-4 + .coll-4 {
+    .row-block-free + .row-block-free {
       margin-left: 30px;
     }
   .bg {
@@ -51,35 +53,55 @@
   background-color: #f8f8f8;
   @include flex-center;
 }
-@media (max-width: 767px) {
-  .title-free-monthly { 
-    padding-top: 70px;
+.col-hover:hover {
+
+  .bg {
+      background-color: #b5b5b5;             /* Hover */
   }
-  .roww-free {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 70px;
+  .subtitle-block {
+      color: $hover;
+      background-color: #d4d4d4;
   }
-  .coll-sm-free {
-    width: 50%;
-    padding: 0 15px 15px 15px;
-  }
-  .coll-sm-12 {
-    width: 100%;
-    padding: 0 15px 15px 15px;
-}
-  .coll-4 +.coll-4 {
-    margin-left: 0px;
 }
 
- 
+  @media (max-width: 1200px) {
+  .roww-free {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 90px;
+    }
+    .row-block-free {
+    margin-bottom: 30px;
   }
-  @media (max-width: 548px) {
-  .coll-xs-free {
-    width: 100%;
+  .row-block-free + .row-block-free {
+    margin-left: 30px;
   }
-  .coll-4 +.coll-4 {
-    margin-left: 0px;
+} 
+@media (max-width: 838px) {
+    .roww-free {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .row-block-free + .row-block-free {
+      margin-left: 0px;
+    }
+}  
+@media (max-width: 767px) {        
+    .roww-free {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 0px;
+    }
+    .row-block-free {
+      width: 100%;
+    }
+    .row-block-free {
+      margin-bottom: 30px;
+  }
 }
-  }
+@media (max-width: 548px) {
+.coll-xs-12 {
+    width: 100%;
+}
+}
 

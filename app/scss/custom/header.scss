@@ -3,6 +3,24 @@
 
 
 
+
+.menu-top{
+    @include default-container;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px auto;
+}
+.menu-help{
+    margin-left: 485px;
+    font-size: 15px;
+    p{
+        color: #e74c3c;
+        span{
+            color: #546e7a;
+            .menu-help-upload{
+                margin-left: 300px;
 .main-menu{
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
@@ -71,6 +89,7 @@
                         border-radius: 5px;
                     }
                     /* -/ button decoration - */
+
             }
         }
     }

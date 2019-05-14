@@ -5,10 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>FOXTAR - market place</title>
+
+        <link href="lib/jquery.formstyler.css" rel="stylesheet" />
+        <link href="lib/jquery.formstyler.theme.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:600|Raleway:700|Roboto:400,500,700" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
         <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"> 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Raleway:700|Roboto:400,500,700" rel="stylesheet">
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/allstyle.min.css">      
     </head>
@@ -76,6 +85,16 @@
                 <div class="menu-help">
                     <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
                 </div>
+
+                <div class="menu-icon">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    <span class="menu-icon-number">8</span>
+                </div>
+                
+                <div class="menu-top-button">
+                    <a href="" class="menu-top-button-l" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+                    <a href="" class="menu-top-button-r">Register</a>
+
                 <div class="menu-icon-btn">
                     <div class="menu-icon">
                              <!-- .dropdown-basket -->
@@ -120,6 +139,7 @@
                         <a href="" class="menu-top-button-l" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
                         <a href="" class="menu-top-button-r">Register</a>
                     </div>
+
                 </div>
             </div>
             <!-- / menu-top -->
@@ -919,7 +939,7 @@
                     <h1 class="title">Why You Choose Foxtar Market Place?</h1>                  
                 </div>
                 <div class="row-you-choose">
-                    <div class="coll coll-4 col-sm-chose coll-xs-12 col-hover">
+                    <div class="coll row-block coll-xs-12 col-hover">
                         <div class="round"></div>  
                         <h2 class="subtitle">Easily Buy & Sell</h2>                 
                         <p class="text">Dorem Ipsum is simply dummy text of the pring 
@@ -927,7 +947,7 @@
                                 standaum.
                         </p>
                     </div>
-                    <div class="coll coll-4 col-sm-chose coll-xs-12 col-hover">
+                    <div class="coll row-block coll-xs-12 col-hover">
                         <div class="round"></div>
                         <h2 class="subtitle">Quality products</h2>
                         <p class="text">Dorem Ipsum is simply dummy text of the pring 
@@ -935,7 +955,7 @@
                                 standaum.
                         </p>
                     </div>
-                    <div class="coll coll-4 coll-sm-12 coll-xs-12 col-hover">
+                    <div class="coll row-block coll-xs-12 col-hover">
                         <div class="round"></div>
                         <h2 class="subtitle">100% Secure Payment</h2>
                         <p class="text">Dorem Ipsum is simply dummy text of the pring 
@@ -964,19 +984,19 @@
             <div class="default-container-free-monthly">
                 <h1 class="title-free-monthly">Free Monthly Tutorials To Help You With Your Project</h1>
                 <div class="roww-free">
-                    <div class="coll-4 coll-sm-free coll-xs-free">
+                    <div class="row-block-free coll-xs-12 col-hover">
                         <div class="bg"></div>
                         <div class="subtitle-block">
                             <span>Web Design Tutorials</span>
                         </div>
                     </div>
-                    <div class="coll-4 coll-sm-free coll-xs-free">
+                    <div class="row-block-free coll-xs-12 col-hover">
                         <div class="bg"></div>
                         <div class="subtitle-block">
                             <span>WordPress Tutorials</span>
                         </div>
                     </div>
-                    <div class="coll-4 coll-sm-12 coll-xs-free">
+                    <div class="row-block-free coll-xs-12 col-hover">
                         <div class="bg"></div>
                         <div class="subtitle-block">
                             <span>HTML & CSS Tutorials</span>
@@ -1008,24 +1028,34 @@
                         <h3 class="title-footer">Join Our Community</h3>
                         <ul>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Home</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Home</span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Forums</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Forums</span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Become an author</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Become an author</span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Community Meetups</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Community Meetups</span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Become an Affiliate</span>
+                                <a href ="#">    
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Become an Affiliate</span>
+                                </a>
                             </li>
                            </ul>
 
@@ -1034,24 +1064,34 @@
                         <h3 class="title-footer">Need help</h3>
                         <ul>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Help Center</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Help Center</span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Forxtar Market Terms</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Forxtar Market Terms</span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Author terms</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Author terms</span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Forxtar Licenses </span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Forxtar Licenses </span>
+                                </a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="list">Contact us</span>
+                                <a href ="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="list">Contact us</span>
+                                </a>
                             </li>
                            </ul>
                     </div>
@@ -1081,6 +1121,45 @@
             </div>
             <div class="subfooter-bottom">
                 <span class="text-subfooter-bottom">&copy;  2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+
+            </div>
+                
+        </footer>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-title">Login</div>
+                        <form action=""></div>
+                            <input type="text">
+                            <input type="password">
+                        </form>
+                        <div class="model-btns">
+                            <button>Submit</button>
+                            <button>Create an account</button>
+                        </div>
+                        <div><a href="">lost password?</a></div>
+           
+                </div>
+            </div>
+        </div>
+
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+           
+        
+
             </div>          
      </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -1089,6 +1168,7 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>  
+
         <script src="js/scripts.js"></script>
     </body>
 </html>
