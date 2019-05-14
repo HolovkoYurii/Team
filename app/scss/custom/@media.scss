@@ -1,0 +1,167 @@
+
+@media(max-width: 1200px){
+/* release-products */
+    .product-details{
+        width: 50%;
+    }
+    .main-info-wrapp{
+        .product-details{
+            width: 48%;
+        }
+    }
+
+    
+/* /release-products */
+}
+@media(max-width:1040px){
+        
+.product-details-information .container{
+    .sidebar{
+        margin-bottom:30px;
+    }
+    .wrapp-button button{
+        margin-right:10px;
+    }
+    .wrapp-social-networks{
+        flex-direction:column;
+        align-items: center;
+        margin-bottom:30px;
+    }
+    
+   
+      
+ }
+}
+
+@media(max-width: 991px){
+/* release-products */
+.main-info{
+
+.main-info-wrapp{
+       .product-details{
+        width: 70%;
+    }
+}
+}
+    .product-details{
+        width: 100%;
+    }
+    .all{
+        flex-direction: column;
+        align-items: center;
+    }
+    .wordPress{
+        flex-direction: column;
+        align-items: center;
+    }
+    .jomla{
+        flex-direction: column;
+        align-items: center;
+    }
+    .plugins{
+        flex-direction: column;
+        align-items: center;
+    }
+    .component{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* /release-products */
+    /* baner */
+    .wrapper-content{
+        flex-direction: column;
+    }
+   .baner-title{
+        margin-bottom: 40px;
+    }
+    /* /baner */
+    /* product-details */
+    
+        .wrapp-button .btn-product-details:first-child{
+            margin-bottom:10px;
+        }
+        .wrapp-button .btn-product-details:nth-child(2) {
+            margin-bottom:10px;
+        }
+
+    
+
+    /* /product-details */
+
+
+}
+@media(max-width: 815px){
+    .wrapp-button{
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+@media(max-width:767px){
+/* release-products */
+   
+    .our-work li{
+        margin-left:3px;
+        margin-bottom:10px;
+    }
+    .more-items{
+        flex-direction: column;
+        align-items: center;
+        .new-items{
+            margin-bottom:10px;
+        }
+   
+      
+    } 
+    
+/* /release-products */
+
+.social-networks a{
+   
+    margin-right:10px;
+}
+
+}
+@media(max-width:846px){
+    .more-product-card{
+       flex-direction: column;
+       align-items: center;
+   }
+  
+   
+}
+@media(max-width:550px){
+    .wrapp-button{
+        flex-direction:column;
+        display: flex;
+    }
+    .product-details-information{
+        .content{
+            flex-direction: column-reverse;
+            align-items: center;
+            }
+        }
+    
+   
+}
+@media(max-width:600px){
+    .all-new-items{
+        .sort span{
+            margin-right: 0;
+        }
+        .content{
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-info-wrapp{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .sidebar{
+        margin-bottom: 10px;
+    }
+}
+.tab-content>.active{
+    display: block;
+}
