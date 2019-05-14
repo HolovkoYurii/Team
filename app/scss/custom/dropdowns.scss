@@ -2,6 +2,9 @@
 @import "../_mixins";
 /* dropdown-user */
 .dropdown-user{
+    .dropdown-toggle::after{
+        display:none;
+    }
     li{
         margin-bottom:22px;
         &:last-child{
@@ -25,14 +28,29 @@
     }
     .dropdown-menu{
         padding:21px 0 28px 0;
+        border-radius:0;
        
     }   
+   
+
+
     
+}
+@media(max-width:920px){
+  
+    .dropdown-basket{
+        .show{
+            margin-top: 59px;
+        }
+    }
 }
 /* /dropdown-user */
 
 /* dropdown-basket */
 .dropdown-basket{
+    .dropdown-toggle::after{
+        display:none;
+    }
     .border-bottom{
         height: 1px;
         background:#dfdfdf;
@@ -73,7 +91,7 @@
     .dropdown-menu{
         padding: 20px 0px 14px 0px;
         width: 270px;
-      
+        border-radius:0;
     }
     
     .btn-dropdown{
@@ -81,12 +99,10 @@
         .btn-go-cart{
             height:35px;
             background:#9cc254;
-            color:#fff;
+            color:$color-text;
             font-size: 14px;
             font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             margin-bottom:0;
             width: 104px;
             margin-left:24px;
@@ -97,12 +113,10 @@
         .btn-checkout{
             height:35px;
             background:#cb5749;
-            color:#fff;
+            color:$color-text;
             font-size: 14px;
             font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;            
             margin-bottom:0;
             width: 125px;
             cursor: pointer;
@@ -122,6 +136,7 @@
     
 }
 /* /dropdown-basket */
+
 
 /* .dropdown-email */
 
@@ -195,3 +210,16 @@
     }
 }
 /* / .dropdown-email */
+
+.dropdown-regular{
+    .dropdown-menu{
+        
+        min-width: 82px;
+        border-radius:0;
+        
+    }
+    .show{
+        margin-left: 5px;
+    }
+}
+
