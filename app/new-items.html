@@ -21,25 +21,80 @@
           <header class="header-product-details">
                 <div class="menu-top">
                     <div class="menu-logo">
-                        <a href=""><img src="./img/logo.png" alt="site logo"></a>
+                        <a href="index.html"><img src="./img/logo.png" alt="site logo"></a>
                     </div>
                     <div class="menu-help">
                         <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
                     </div>
                     <div class="menu-icon">
-                        <a href=""><i class="far fa-bell"></i></a>
+                        <a class="menu-icon-custom" href="">
+                            <i class="far fa-bell"></i>
+                        </a>
                         <span class="menu-icon-number position-icon-first">8</span>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <span class="menu-icon-number position-icon-second">5</span>
-                        <a href=""><i class="fas fa-shopping-cart"></i></a>
+                        <!-- .dropdown-email -->
+                        <div class="dropdown-email">
+                            <!-- button decoration -->
+                            <button type="button" id="emailfaenvelope" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-216,33">
+                                <a class="menu-icon-custom" href="">
+                                    <i class="far fa-envelope"></i>
+                                    <span class="menu-icon-number position-icon-second">5</span>
+                                </a>
+                            </button>
+                            <!-- / button decoration  -->
+                            <!-- .dropdown-menu -->
+                            <div class="dropdown-menu" aria-labelledby="emailfaenvelope">
+                                <!-- firs dropdown-menu -->
+                                <a class="dropdown-item" href="#">
+                                    <span class="gray-square"></span>
+                                    <span class="email-message">
+                                        <div class="email-name">Kazi Fahim</div>
+                                        <div class="email-text">Need WP Help!</div>
+                                        <div class="email-data">01 Dec, 2016</div>
+                                    </span>
+                                    <span class="email-badge">
+                                        <i class="far fa-envelope far-color"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- / firs dropdown-menu -->
+                                <a class="dropdown-item" href="#">
+                                    <span class="gray-square"></span>
+                                    <span class="email-message">
+                                        <div class="email-name">Richi Lenal</div>
+                                        <div class="email-text">Need WP Help!</div>
+                                        <div class="email-data">26 Nov, 2016</div>
+                                    </span>
+                                    <span class="email-badge">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- / second dropdown-menu -->
+                                <a class="dropdown-item" href="#">
+                                    <span class="gray-square"></span>
+                                    <span class="email-message">
+                                        <div class="email-name">PsdBosS</div>
+                                        <div class="email-text">Psd Template Help!</div>
+                                        <div class="email-data email-data-color">26 Nov, 2016</div>
+                                    </span>
+                                    <span class="email-badge">
+                                        <i class="fas fa-reply"></i>
+                                    </span>
+                                </a>
+                                <!-- / third dropdown-menu -->
+                            </div>
+                            <!-- / .dropdown-menu -->
+                        </div>
+                        <!-- /.dropdown-email -->
+                        <a class="menu-icon-custom" href=""><i class="fas fa-shopping-cart"></i></a>
                         <!-- .dropdown-basket -->
                         <div class="dropdown-basket">
-                                <button class="" type="button" id="btn-basket-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        
-                                <a href="">
+                                <button class="" type="button" id="btn-basket-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="menu-icon-custom" href="">
                                     <span class="menu-icon-number position-icon-third">8</span>
-                                </a>
+                                    </a>
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="btn-basket-dropdown">                                      
+                                <div class="dropdown-menu" aria-labelledby="btn-basket-dropdown"> 
                                                 <div class="card-product-small">
                                                     <div class="foto-product-small"></div>
                                                     <div class="product-info-small">
@@ -66,7 +121,7 @@
                                        <div class="btn-dropdown">
                                              <div class="btn-go-cart">Go to Cart</div>
                                             <div class="btn-checkout">Go to Checkout</div>
-                                       </div>           
+                                    </div>           
                                 </div>
                         <!-- /.dropdown-basket -->
                               </div>
