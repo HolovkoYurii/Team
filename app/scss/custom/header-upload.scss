@@ -1,7 +1,6 @@
 @import "../_variabels";
 @import "../_mixins";
 
-
 header{
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -15,16 +14,15 @@ header{
     align-items: center;
     margin: 27px auto;
 }
-.menu-help{
-    margin-left: 485px;
+.menu-help-upload{
+    margin-left: 300px;
     font-size: 15px;
     p{
         color: #e74c3c;
         span{
             color: #546e7a;
-            .menu-help-upload{
-                margin-left: 300px;
-            }
+            
+            
         }
     }
 }
@@ -52,6 +50,11 @@ header{
     border-radius: 50%;
     height: 18px;
     width: 18px;
+
+    .menu-icon-number-envelope{
+        background: #e74c3c;
+    }
+
 }
 
 
@@ -61,14 +64,9 @@ header{
     color:$color-text;
 }
 
-.menu-top-button-l{ 
-    padding: 12px 21px;
-    background:#8bc34a;
-    border-radius: 5px;
 
-}
 .menu-top-button-r{
-    background: $color-top;
+    background: #e74c3c;
     padding: 12px 14px;
     border-radius: 5px;
 }

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FOXTAR - market place</title>
+        <link href="lib/jquery.formstyler.css" rel="stylesheet" />
+        <link href="lib/jquery.formstyler.theme.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:700|Raleway:700|Roboto:400,500,700" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/allstyle.min.css">      
+    </head>
+    <body> 
+        <header>
+            <div class="menu-top">
+                <div class="menu-logo">
+                    <a href=""><img src="./img/logo.png" alt="site logo"></a>
+                </div>
+                <div class="menu-help-upload">
+                    <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
+                </div>
+                <div class="menu-icon">    
+                    <a href=""><i class="far fa-bell"></i></a>
+                    <span class="menu-icon-number">8</span>
+                </div>
+                <div class="menu-icon">    
+                    <a href=""><i class="far fa-envelope"></i></a>
+                    <span class="menu-icon-number menu-icon-number-envelope">5</span>
+                </div>
+                <div class="menu-icon">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    <span class="menu-icon-number">8</span>
+                </div>
+                <div class="menu-top-button">
+                    <a href="" class="menu-top-button-r">Register</a>
+                </div>
+            </div>
+            <!-- / menu-top -->
+            <div class="menu-nav">
+                <ul class="menu-list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">WordPress</a></li>
+                    <li><a href="">Joomla</a></li>
+                    <li><a href="">PSD</a></li>
+                    <li><a href="">Plugins</a></li>
+                    <li><a href="">Components</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <!-- / menu-nav -->
+        </header>
+        <!-- / .HEADER -->
+        <div class="welcome">
+            <div class="welcome-background welcome-background-upload">
+            <div class="welcome-container">
+                <h1 class="welcome-title">
+                    Welcome To Foxtar Market Place!
+                </h1>
+                <p class="welcome-paragraf">
+                    Premium WordPress Themes, Web Templates and Many More ...
+                </p>
+                <form action="">
+                    <input type="text" class="welcome-search" placeholder="Search Your Keywords...">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+            </div>
+        </div>
+        <!-- /.welcome -->
+        <div class="upload-product">
+            <div class="container">
+                <div class="home-block">
+                    <span class="home">Home</span><span class="home">-</span><span class="upload">Upload Product</span>
+                </div>
+                <div class="forms-block">
+                    <div class="forms-title">
+                        <h1>Upload Your item</h1>
+                    </div>
+                    <div class="forms">
+                        <div class="item-form">
+                            <span class="forms-items">Select Categories <sup class="star">*</sup> </span>
+                            <select class="form-control form-control-sm">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="item-form">
+                            <span class="forms-items">Product Name<sup class="star">*</sup> </span>
+                            <input class="form-control form-control-sm" type="text" placeholder="Enter your product name here ...">
+                        </div>
+                        <div class="item-form">
+                            <span class="forms-items">Product Description<sup class="star">*</sup> </span>
+                            <textarea class="form-control form-control-sm form-control-description is-invalid" id="validationTextarea" placeholder="&lt;h1&gt; Type your text  here &lt;/h1/&gt;" required></textarea>       
+                        </div>
+                        <div class="item-form">
+                            <span class="forms-items">Upload Main File<sup class="star">*</sup> </span>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">No file choosen</label>
+                            </div>
+                        </div>
+                        <div class="item-form">
+                            <span class="forms-items">File Included<sup class="star">*</sup> </span>
+                            <input class="form-control form-control-sm" type="text" placeholder="Select File Type">
+                        </div>
+                        <div class="item-form">
+                            <span class="forms-items">File Dimensions<sup class="star">*</sup> </span>
+                            <input class="form-control form-control-sm" type="text" placeholder="Enter the item  dimentionss here ...">
+                        </div>
+                        <div class="item-form">
+                            <span class="forms-items">Item Tags<sup class="star">*</sup> </span>
+                            <input class="form-control form-control-sm" type="text" placeholder="Enter Tag Here">
+                        </div>
+                        <div class="forms-title-set">
+                            <h1>Set Your Price (US$)</h1>
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <div class="item-form">
+                            <span class="forms-items">Regular License<sup class="star">*</sup> </span>
+                            <input class="form-control form-control-sm" type="text" placeholder="$00.00">
+                        </div> 
+                        <div class="item-form">
+                            <span class="forms-items">Extended License<sup class="star">*</sup> </span>
+                            <input class="form-control form-control-sm" type="text" placeholder="$00.00">
+                        </div>
+                        <div class="btn-green">
+                            <span>Submit</span>  
+                        </div>
+                    </div>   
+                </div>
+                <div class="empty"></div>
+            </div> 
+        </div>  
+        <footer>
+            <div class="subfooter-top">
+                <div class="default-container-footer">
+                    <div class="about coll-xs-12">
+                        <h3 class="title-footer">About Company</h3>
+                        <p class="text-footer">Praesent vel rutrum purus. Nam vel dui eu 
+                            risus duis dignissim digniSuspen 
+                            disse.Fusce sit amet urna iat.Praesent vel 
+                            rutrum purus. </p>
+                        <div class="adress">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <p class="contact">PO Box 16122 Collins Street West 
+                                    Victoria 8007 Australia </p>
+                        </div>
+                        <div class="phone">
+                            <span><i class="fas fa-phone"></i></span>
+                            <p class="contact">+61 3 8376 6284</p>
+                        </div>
+                    </div>        
+                    <div class="join coll-xs-12">
+                        <h3 class="title-footer">Join Our Community</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Home</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Forums</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Become an author</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Community Meetups</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Become an Affiliate</span>
+                            </li>
+                           </ul>
+
+                    </div>
+                    <div class="help coll-xs-12">
+                        <h3 class="title-footer">Need help</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Help Center</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Forxtar Market Terms</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Author terms</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Forxtar Licenses </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="list">Contact us</span>
+                            </li>
+                           </ul>
+                    </div>
+                    <div class="follow coll-xs-12">
+						<h3 class="title-footer">Follow Us On</h3>
+                        <nav class="sprite">
+                            <a href="" class="icon icon-facebook"></a>
+                            <a href="" class="icon icon-twitter"></a>
+                            <a href="" class="icon icon-youtoobe"></a>
+                            <a href="" class="icon icon-pinterest"></a>
+                            <a href="" class="icon icon-in"></a>
+                            
+                            
+                        </nav>
+                        <h3 class="newsletter">Newsletter Sign Up</h3>
+                        <div class="form-btn-footer">
+                            <form action="" class="form-footer">
+                                <input type="text" name="user-name" placeholder="E-mail Address" class="form-control1">
+                            </form>
+                            
+                            <div class="btn-footer">
+                                <i class="fas fa-location-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter-bottom">
+                <span class="text-subfooter-bottom">&copy;  2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+            </div>
+                
+        </footer>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-title">Login</div>
+                        <form action=""></div>
+                            <input type="text">
+                            <input type="password">
+                        </form>
+                        <div class="model-btns">
+                            <button>Submit</button>
+                            <button>Create an account</button>
+                        </div>
+                        <div><a href="">lost password?</a></div>
+           
+                </div>
+            </div>
+        </div>
+
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+           
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
