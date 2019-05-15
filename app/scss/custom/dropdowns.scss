@@ -51,22 +51,16 @@
     .dropdown-toggle::after{
         display:none;
     }
-    .border-bottom{
-        height: 1px;
-        background:#dfdfdf;
-        margin-bottom: 24px;
-        &:last-child{
-            margin-bottom: 19px; 
-        }
+   
       
     }
     .card-product-small{
+        margin:0;
+       padding: 0px 0px 24px 24px;
         border:none;
-        box-shadow: none;
-        margin-left:24px;
-        margin-bottom:24px;
-        &:hover{
-            box-shadow: none;
+        margin-bottom:23px;
+        &:nth-child(2){
+        margin-bottom: 17px;
         }
         .foto-product-small{
             height: 60px;
@@ -74,7 +68,7 @@
             margin-right: 16px;
         }
         .product-info-small{
-            padding:0;
+            padding:0; 
         }
         .product-title-small{
             margin-bottom:0;
@@ -89,13 +83,15 @@
     }
 
     .dropdown-menu{
-        padding: 20px 0px 14px 0px;
+        padding: 20px 0px 13px 0px;
         width: 270px;
         border-radius:0;
     }
     
     .btn-dropdown{
         display: flex;
+        justify-content:space-between;
+        padding:0 17px;
         .btn-go-cart{
             height:35px;
             background:#9cc254;
@@ -105,8 +101,6 @@
             @include flex-center;
             margin-bottom:0;
             width: 104px;
-            margin-left:24px;
-            margin-right:3px;
             cursor: pointer;
             
         }
@@ -134,7 +128,7 @@
         }
     }
     
-}
+
 /* /dropdown-basket */
 .dropdown-regular{
     .dropdown-menu{
