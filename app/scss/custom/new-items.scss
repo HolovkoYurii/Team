@@ -4,6 +4,10 @@
     background:#f4f6f5;
     padding-top:49px;
     padding-bottom: 110px;
+    .container{
+    @include default-container;
+
+    }
     .sidebar{
         margin-left: 0;
         margin-right: 15px;
