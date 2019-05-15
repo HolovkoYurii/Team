@@ -1,4 +1,11 @@
 
+@media(max-width: 1345px){
+    .product-details{
+        width: 30%;
+
+    }
+
+}
 @media(max-width: 1200px){
 /* release-products */
     .product-details{
@@ -46,26 +53,7 @@
     .product-details{
         width: 100%;
     }
-    .all{
-        flex-direction: column;
-        align-items: center;
-    }
-    .wordPress{
-        flex-direction: column;
-        align-items: center;
-    }
-    .jomla{
-        flex-direction: column;
-        align-items: center;
-    }
-    .plugins{
-        flex-direction: column;
-        align-items: center;
-    }
-    .component{
-        flex-direction: column;
-        align-items: center;
-    }
+   
     /* /release-products */
     /* baner */
     .wrapper-content{

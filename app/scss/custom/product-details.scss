@@ -12,6 +12,10 @@
 .product-details-information{
     background:#f4f6f5;
     padding-top:49px;
+    .container{
+     @include default-container;
+
+    }
   }
     .title{
         font-family: 'Roboto', sans-serif;

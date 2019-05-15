@@ -11,7 +11,7 @@ $( function() {
       autoplaySpeed:5000,	
       infinite: true,
       slidesToShow: 4,
-      slidesthoshow:0,
+      slidesthoshow:0, 
       responsive:[
         {
           breakpoint:1400,
@@ -40,7 +40,6 @@ $( function() {
       ]
       
     });
-
   });
   $(".js-range-slider").ionRangeSlider({
     type: "double",
