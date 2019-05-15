@@ -6,6 +6,15 @@
     background-color: $background-text;     /* Block "You choose" */
     display: flex;
     justify-content: center;
+    .subtitle {
+        @include default-text;
+        font-size: 24px;                               /* Title */
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 30px;
+        display: block;
+        color: $color-text
+        }
     .title {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
@@ -99,15 +108,7 @@
         border-color: #b5b5b5;
     }
 
-        .subtitle {
-        @include default-text;
-        font-size: 24px;                               /* Title */
-        text-align: center;
-        cursor: pointer;
-        margin-bottom: 30px;
-        display: block;
-        color: $color-text
-        }
+       
         .text {
             text-align: center;
                          /* Text */
