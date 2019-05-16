@@ -72,7 +72,7 @@
                 padding:0;
                 border:none;
                 .price-product{
-                    margin-top: -42px;
+                    margin-top: -19px;
                 }
                 
             }
@@ -152,7 +152,7 @@
             justify-content: space-between;
         }
         .price-product{
-            margin-top: -47px;
+            margin-top: -17px;
         }
     }
     .our-work li:active{
@@ -179,6 +179,11 @@
 .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single{
     background:none;
     color:#7e8f9a;   
+    &::after{
+        content:"$";
+        color:#7e8f9a;
+
+    }
 }
 .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
     display:none;
@@ -189,7 +194,8 @@
 .irs-from, .irs-to, .irs-single{
     top: 60px;
 }
-.irs--round {
+.irs--round { 
     margin-bottom:56px;
 }
+
 
