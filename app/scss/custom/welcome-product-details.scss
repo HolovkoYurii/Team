@@ -39,6 +39,7 @@
             }
             /* --- input decoration --- */
             .search{
+                @include default-text;
                 margin-top: 28px;
                 width: 670px;
                 height: 56px;
@@ -47,9 +48,6 @@
                 font-size: 14px;
                 line-height: 30px;
                 letter-spacing: 0.7px;
-                font-weight: 500;
-                font-family: 'Roboto',
-                sans-serif;
                 color:#90a4ae;
                     &::placeholder{
                         color:#90a4ae;
@@ -68,8 +66,7 @@
 @media(max-width: 880px){
 
     .welcome-product-details{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         .background{
             .container{
                 h1{

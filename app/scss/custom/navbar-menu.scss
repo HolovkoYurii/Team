@@ -4,7 +4,7 @@
 
 .main-menu{
     .navbar-light {
-        background-color: $background-text;
+        background-color: $background-color-navmenu;
         height: 60px;
         padding: 0px;
         font-weight: 500;
@@ -13,9 +13,8 @@
         color: $color-text;
         z-index: 3;
         .container{
-            max-width: 1170px;
-            padding-left: 10px;
-            .navbar-toggler {
+            @include default-container;
+             .navbar-toggler {
                 margin-left: 45px;
                 border: none;
             }
@@ -23,11 +22,8 @@
                 width: 76px;
                 height: 54px;
             }
-        
             .navbar-collapse{
-                padding-left: 20px;
                 .navbar-nav{
-                    
                     .nav-link{
                         padding: 0px;
                         color: $color-text;
@@ -48,11 +44,10 @@
                 .navbar-collapse{
                     .navbar-nav{
                         width: 150px;
-                        display: inline-block;
-                        background-color: $background-text;
-                        display: inline-flex;
+                        background-color: $background-color-navmenu;
                         border-radius: 3px;
                         text-align: center;
+                        margin-left: 20px;
                         li + li{
                             margin-left: 0px;
                        }

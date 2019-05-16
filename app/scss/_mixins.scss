@@ -1,9 +1,8 @@
 
-@mixin default-container {
+@mixin default-container () {
     max-width: 1200px;
     margin: auto;
-    padding: 0 15px
-
+    padding: 0 15px;
 }   
 @mixin flex-center () {
     display: flex;
@@ -38,4 +37,8 @@ flex-direction: column;
     padding: 26px 31px 29px 31px;
     border: solid 1px #ddd;
     margin-bottom:30px;
+}
+@mixin flex-s-b (){
+    display: flex;
+    justify-content: space-between;
 }
