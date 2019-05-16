@@ -13,6 +13,7 @@
         color: $color-text;
         border: none;
         border-radius: 0px;
+        margin: auto 10px;
             .modal-header{
                 display: inline-block;
                 border: none;
@@ -37,8 +38,7 @@
                 }
             }
             .modal-body{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 align-items: center;
                 flex: none;
                 color: $color-text;
@@ -78,7 +78,7 @@
                         font-size: 14px;
                         line-height: 36px;
                         font-weight: 400;
-                        background-color: #76ae36;
+                        background-color: $background-color-login;
                         margin-bottom: 8px;
                         padding-left: 41px;
                         color: $color-text;
@@ -114,7 +114,7 @@
                             height: 50px;
                             width: 250px;
                             color: $color-text;
-                            background-color: #76ae36;
+                            background-color: $background-color-login;
                             margin-left: 10px;
                             text-align: left;
                                 .fa-edit{

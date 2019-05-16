@@ -81,8 +81,7 @@
     }
     
     .btn-dropdown{
-        display: flex;
-        justify-content:space-between;
+        @include flex-s-b;
         padding:0 17px;
         .btn-go-cart{
             height:35px;
@@ -102,7 +101,7 @@
             color:$color-text;
             font-size: 14px;
             font-weight: 700;
-            @include flex-center;            
+            @include flex-center;
             margin-bottom:0;
             width: 125px;
             cursor: pointer;
@@ -110,8 +109,7 @@
         }
     }
     .total-price{
-        display: flex;
-        justify-content: space-between;
+        @include flex-s-b;
         padding: 0px 37px 16px 30px;
         span{
             font-family: 'Roboto',sans-serif;
