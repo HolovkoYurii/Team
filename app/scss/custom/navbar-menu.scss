@@ -4,7 +4,7 @@
 
 .main-menu{
     .navbar-light {
-        background-color: #263238;
+        background-color: $background-text;
         height: 60px;
         padding: 0px;
         font-weight: 500;
@@ -16,34 +16,51 @@
             max-width: 1170px;
             padding-left: 10px;
             .navbar-toggler {
-                background-color: #ffffff;
-                margin-left: 34px;
+                margin-left: 45px;
+                border: none;
             }
-            .navbar-nav{
-                .nav-link{
-                    padding: 0px;
-                    color: $color-text;
-                }
-                li + li{
-                    margin-left: 43px;
-
+            .navbar-toggler-icon{
+                width: 76px;
+                height: 54px;
+            }
+        
+            .navbar-collapse{
+                padding-left: 20px;
+                .navbar-nav{
+                    
+                    .nav-link{
+                        padding: 0px;
+                        color: $color-text;
+                    }
+                    li + li{
+                         margin-left: 43px;
+                    }
                 }
             }
         }
     }
+    
 }
-
-@media(max-width: 992px){
+@media(max-width: 991px){
     .main-menu{
         .navbar-light{
             .container{
                 .navbar-collapse{
-                    li{
-                    margin-left: 43px;
+                    .navbar-nav{
+                        width: 150px;
+                        display: inline-block;
+                        background-color: $background-text;
+                        display: inline-flex;
+                        border-radius: 3px;
+                        text-align: center;
+                        li + li{
+                            margin-left: 0px;
+                       }
                     }
                 }
             }
         }
     }
 }
+
 
