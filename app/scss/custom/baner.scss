@@ -27,7 +27,7 @@
 
 
     button{
-        background: #fff;
+        background: $color-text;
         padding: 25px 43px;
         color:rgb(45, 53, 58);
         font-size: 18px; 
@@ -39,7 +39,7 @@
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color:#fff;
+    color:$color-text;
     max-width: 261px;
 }
     span{
