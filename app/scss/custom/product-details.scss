@@ -28,14 +28,14 @@
       .product-text{
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
-            color:#707070;
+            color:$input-color;
             margin-bottom:45px;
         }  
     
 .wrapp-foto-product{
         
         height: 458px;
-        background:#fff;
+        background:$color-text;
         padding: 19px 20px 17px 20px;
         border:solid 1px #dddddd;
        
@@ -108,7 +108,7 @@
         width: 54px;
         height: 51px;
         font-size: 18px;
-        color:#fff;
+        color:$color-text;
         @include flex-center;        
         margin-right:3px;
         font-weight: 400;
@@ -155,18 +155,18 @@
         border-bottom: solid 3px $default-color-green;
     }
     .nav-tabs{
-       background: #fff;
+       background: $color-text;
 
     }
     .tab-content{
-        background: #fff;
+        background: $color-text;
         border: solid 1px #dedede;
 
     }
     .tab-content ul li span{
        font-family: 'Roboto', sans-serif;
        font-size:16px;
-       color:#707070;
+       color:$input-color;
 
     }
     .tab-content ul li::before{
@@ -180,12 +180,13 @@
     }
     .tab-content>.active {
         display: flex;
+        flex-wrap: wrap;
     }
      /* /tabs */
 
      
   .more-product{
-      background: #fff;
+      background: $color-text;
       margin-top:52px;
       margin-bottom: 28px;
       border: solid 1px #dedede;
@@ -211,7 +212,7 @@
        .product-info-small{
             @include flex-column;
             padding: 19px 21px 10px 21px;
-            background:#fff;
+            background:$color-text;
 
         }
         &:hover{
@@ -298,7 +299,7 @@
     .btn-add-cart{
         height:49px;
         background:$default-color-green;
-        color:#fff;
+        color:$color-text;
         font-size: 16px;
         font-weight: 700;
         @include flex-center;   
@@ -309,7 +310,7 @@
     .btn-favourites{
         height:49px;
         background:#6aa3f2;
-        color:#fff;
+        color:$color-text;
         font-size: 16px;
         font-weight: 700;
         @include flex-center;       
@@ -321,7 +322,7 @@
    .btn-bay-now{
     height:49px;
     background:#5d6e79;
-    color:#fff;
+    color:$color-text;
     font-size: 16px;
     font-weight: 700;
     @include flex-center;    
@@ -367,7 +368,7 @@
         }
         span:last-child{
             font-size:13px;
-            color:#707070;
+            color:$input-color;
             border:solid 1px #d4d4d4;
             height: 28px;
             @include flex-center;            
@@ -427,7 +428,7 @@
 
 /*  sideabar-sales  */
 .sideabar-sales{
-    background:#fff;
+    background:$color-text;
     display:flex;
     border: solid 1px #ddd;
     margin-bottom:30px;
@@ -446,7 +447,7 @@
 
     }
     span:last-child{
-        color:#707070;
+        color:$input-color;
         font-size:16px;
         font-weight:400;
         margin:0;
@@ -456,7 +457,7 @@
 
 /* sidebar-product-information */
 .sidebar-product-information{
-    background:#fff;
+    background:$color-text;
     padding: 26px 31px 29px 31px;
     border: solid 1px #ddd;
 

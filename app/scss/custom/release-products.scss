@@ -28,13 +28,13 @@ h2{
     padding-bottom: 59px;
     flex-wrap: wrap;
 }  
-.our-work li{background:#fff;   
+.our-work li{background:$color-text;   
   padding:13px 21px;
   margin:-1px;
 }
 .our-work li.ui-state-active{
   background:#c94d3f; 
-  color:#fff; 
+  color:$color-text; 
 }   
 .our-work li{  
   margin-right: 6px; 
@@ -45,7 +45,7 @@ h2{
     max-width: 430px;
     width: 24%;
     padding-bottom: 22px; 
-    background-color:#fff;
+    background-color:$color-text;
     margin: 0 2px 32px 2px;
     border-top:none;
     box-shadow: 0 1px 5px 0 #dadfe2;
@@ -144,7 +144,7 @@ h2{
   .lightning::after{
     content:"\f0e7";
     font-size: 18px;
-    color:#fff;
+    color:$color-text;
     font-family:"Fontawesome";
     position: absolute;
     top: 11px;
@@ -200,7 +200,7 @@ h2{
    font-size: 16px;
    font-family: 'Roboto', sans-serif;
    color:rgb(46, 53, 58);
-   background: #fff;
+   background: $color-text;
    padding: 21px 40px 19px 32px;
    margin:  0 6px ;
    box-shadow: 0 1px 5px 0 #dadfe2;
