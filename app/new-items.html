@@ -24,8 +24,58 @@
                 <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
             </div>
             <div class="menu-icon">
-                <a class="menu-icon-custom" href=""><i class="far fa-bell"></i></a>
-                <span class="menu-icon-number position-icon-first">8</span>
+                <!-- .dropdown-bell -->
+                <div class="dropdown-bell">
+                        <!-- button decoration -->
+                        <button type="button" id="fabell" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-offset="-216,33">
+                            <a class="menu-icon-custom" href="">
+                                <i class="far fa-bell"></i>
+                                <span class="menu-icon-number position-icon-first">8</span>
+                            </a>
+                        </button>
+                        <!-- / button decoration  -->
+                        <!-- .dropdown-menu -->
+                        <div class="dropdown-menu" aria-labelledby="fabell">
+                            <!-- firs dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="bell-message">
+                                    <div class="bell-text">Need WP Help!</div>
+                                    <div class="bell-data">01 Dec, 2016</div>
+                                </span>
+                                <span class="bell-badge">
+                                    <i class="far fa-bell far-color"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- / firs dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="bell-message">
+                                    <div class="bell-text">Need WP Help!</div>
+                                    <div class="bell-data">26 Nov, 2016</div>
+                                </span>
+                                <span class="bell-badge">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- / second dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="bell-message">
+                                    <div class="bell-text">Need WP Help!</div>
+                                    <div class="bell-data">26 Nov, 2016</div>
+                                </span>
+                                <span class="bell-badge">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                            </a>
+                            <!-- / third dropdown-menu -->
+                        </div>
+                </div>
+                    <!-- .dropdown-bell -->
                 <!-- .dropdown-email -->
                 <div class="dropdown-email">
                     <!-- button decoration -->
@@ -705,90 +755,116 @@
         <footer>
                 <div class="subfooter-top">
                     <div class="default-container-footer">
-                        <div class="about coll-xs-12">
-                            <h3 class="title-footer">About Company</h3>
-                            <p class="text-footer">Praesent vel rutrum purus. Nam vel dui eu 
-                                risus duis dignissim digniSuspen 
-                                disse.Fusce sit amet urna iat.Praesent vel 
-                                rutrum purus. </p>
-                            <div class="adress">
-                                <span><i class="fas fa-map-marker-alt"></i></span>
-                                <p class="contact">PO Box 16122 Collins Street West 
-                                        Victoria 8007 Australia </p>
-                            </div>
-                            <div class="phone">
-                                <span><i class="fas fa-phone"></i></span>
-                                <p class="contact">+61 3 8376 6284</p>
-                            </div>
-                        </div>        
-                        <div class="join coll-xs-12">
-                            <h3 class="title-footer">Join Our Community</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Home</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Forums</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Become an author</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Community Meetups</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Become an Affiliate</span>
-                                </li>
-                               </ul>
+                        <div class="wrapper">
+                            <div class="about coll-xs-12">
+                                <h3 class="title-footer">About Company</h3>
+                                <p class="text-footer">Praesent vel rutrum purus. Nam vel dui eu 
+                                    risus duis dignissim digniSuspen 
+                                    disse.Fusce sit amet urna iat.Praesent vel 
+                                    rutrum purus. </p>
+                                <div class="adress">
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <p class="contact">PO Box 16122 Collins Street West 
+                                            Victoria 8007 Australia </p>
+                                </div>
+                                <div class="phone">
+                                    <span><i class="fas fa-phone"></i></span>
+                                    <p class="contact">+61 3 8376 6284</p>
+                                </div>
+                            </div>        
+                            <div class="join coll-xs-12">
+                                <h3 class="title-footer">Join Our Community</h3>
+                                <ul>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Forums</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Become an author</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Community Meetups</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">    
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Become an Affiliate</span>
+                                        </a>
+                                    </li>
+                                </ul>
     
+                            </div>
                         </div>
-                        <div class="help coll-xs-12">
-                            <h3 class="title-footer">Need help</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Help Center</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Forxtar Market Terms</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Author terms</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Forxtar Licenses </span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right"></i>
-                                    <span class="list">Contact us</span>
-                                </li>
-                               </ul>
-                        </div>
-                        <div class="follow coll-xs-12">
-                            <h3 class="title-footer">Follow Us On</h3>
-                            <nav class="sprite">
-                                <a href="" class="icon icon-facebook"></a>
-                                <a href="" class="icon icon-twitter"></a>
-                                <a href="" class="icon icon-youtoobe"></a>
-                                <a href="" class="icon icon-pinterest"></a>
-                                <a href="" class="icon icon-in"></a>    
-                            </nav>
-                            <h3 class="newsletter">Newsletter Sign Up</h3>
-                            <div class="form-btn-footer">
-                                <form action="" class="form-footer">
-                                    <input type="text" name="user-name" placeholder="E-mail Address" class="form-control1">
-                                </form>
-                                
-                                <div class="btn-footer">
-                                    <i class="fas fa-location-arrow"></i>
+                        <div class="wrapper">
+                            <div class="help coll-xs-12">
+                                <h3 class="title-footer">Need help</h3>
+                                <ul>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Help Center</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Forxtar Market Terms</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Author terms</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Forxtar Licenses </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Contact us</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="follow coll-xs-12">
+                                <h3 class="title-footer">Follow Us On</h3>
+                                <nav class="sprite">
+                                    <a href="" class="icon icon-facebook"></a>
+                                    <a href="" class="icon icon-twitter"></a>
+                                    <a href="" class="icon icon-youtoobe"></a>
+                                    <a href="" class="icon icon-pinterest"></a>
+                                    <a href="" class="icon icon-in"></a>
+                                    
+                                    
+                                </nav>
+                                <h3 class="newsletter">Newsletter Sign Up</h3>
+                                <div class="form-btn-footer">
+                                    <form action="" class="form-footer">
+                                        <input type="text" name="user-name" placeholder="E-mail Address" class="form-control1">
+                                    </form>
+                                    
+                                    <div class="btn-footer">
+                                        <i class="fas fa-location-arrow"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -796,8 +872,10 @@
                 </div>
                 <div class="subfooter-bottom">
                     <span class="text-subfooter-bottom">&copy;  2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
-                </div>          
-         </footer>
+    
+                </div>
+                    
+            </footer>
          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
