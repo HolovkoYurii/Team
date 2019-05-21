@@ -1,219 +1,185 @@
 @import "../_variabels";
 @import "../_mixins";
 
-    .upload-product {
-    background-color: $background-color;
-    display: flex;                        /* Block "upload product" */
-    justify-content: center;
+.upload-product {
+  background-color: $background-color;
+  display: flex; /* Block "upload product" */
+  justify-content: center;
+
+  .container {
+    @include default-container;
+
+    .home-block {
+      background-color: $background-color;
+      display: flex;
+      justify-content: flex-start; /* Block "Home - Upload" */
+      padding-top: 50px;
+      padding-bottom: 45px;
+
+      .home {
+        @include default-text-400;
+        font-size: 15px; /* Features of "Home" */
+        color: $line-color;
+        padding-right: 10px;
+      }
+      .upload {
+        @include default-text;
+        font-size: 15px;
+        /* Features of "Upload" */
+        color: $background-text;
+      }
     }
-    
-        .container {
-        @include default-container;
-        padding-right: 0px;                  
-        padding-left: 0px;
-        }
+    .forms-block {
+      background-color: $color-text;
+      border: 1px solid $border-color; /* Block for form */
+      .forms-title {
+        font-size: 24px;
+        @include default-text; /* "Upload your item" */
+        padding: 20px 0 25px 35px;
+      }
+      .label-forms {
         
-            .home-block {
-            background-color: $background-color;
-            display: flex;
-            justify-content: flex-start;       /* Block "Home - Upload" */
-            padding-top: 50px;
-            padding-bottom: 45px; 
+        padding: 50px 50px 0 45px;
+        border-top: 1px solid $border-color;
+        /* Inner block for form */
+
+        .label-form-item {
+          
+          display: flex;
+        flex-direction: row;
+
+          .label-item {
+            @include default-text;
+            width: 175px;
+            font-size: 15px; /* "item" feature */
+            color: #444444;
+            height: 40px;
+            padding-top: 13px;
+            margin-bottom: 20px;
+            sup {
+              top: -6px;
+            } /* Superscript character */
+            .star {
+              font-size: 24px;
+              @include default-text;
+              color: $star-button;
             }
-            
-                .home {
+          }
+          .form-item {
+            height: 40px;
+            margin-bottom: 20px;
+            width: 894px;
+
+            .form-control {
+              background-color: $background-input; /* input */
+              border: 1px solid $border-color;
+            }
+            .form-control-sm {
+              display: block;
+              height: 40px;
+              padding: 0 20px; /* input */
+              line-height: 1.5;
+              border-radius: 0px;
+              font-size: 15px;
+              @include default-text-400;
+              color: $input-color;
+              position: relative;
+            }
+            .form-control.is-invalid {
+              background-image: none;
+            }
+            textarea.form-control {
+              height: 150px;
+            }
+            .form-control.is-invalid {
+              border-color: $border-color;
+            }
+            .form-control-description {
+              /* padding for textarea  */
+              padding: 13px 20px;
+            }
+            .custom-file {
+              width: 100%;
+              margin-bottom: 20px; /* input for files */
+
+              .form-file-input {
+                border: 1px solid $border-color;
+
+                height: 40px;
+              }
+
+              .custom-file-label {
+                height: 40px;
+                background-color: $background-input;
+                border: 1px solid $border-color; /* input for files */
+                border-radius: 0;
+                padding: 11px 0 11px 115px;
+                font-family: "Roboto", sans-serif;
+                font-size: 12px;
+                color: $input-color;
+                content: "No file choosen";
+              }
+
+              .custom-file-label::after {
+                top: 6px;
+                left: 0;
+                width: 90px;
+                height: 25px;
+                font-size: 12px;
                 @include default-text-400;
-                font-size: 15px;                    /* Features of "Home" */
-                color: $line-color;
-                padding-right: 10px;
-                }
-                .upload {
-                    @include default-text;
-                    font-size: 15px;
-                                        /* Features of "Upload" */
-                    color: $background-text;
-                }
-            
-
-.forms-block {
-    background-color: $color-text;
-    border: 1px solid $border-color;   /* Block for form */
-}
-.forms-title {
-    font-size: 24px;
-    @include default-text;   /* "Upload your item" */
-    padding: 20px 0 25px 35px;
-}
-.forms {
-    padding-top: 50px;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;   /* Inner block for form */
-}
-.item-form {
-    line-height: 13px;
-    display: flex;               /* Block for certain item and input */
-}
-
-.forms-items {
-    display: inline-block;
-    @include default-text;
-    font-size: 15px;                /* "item" feature */
-    color: #444444;
-    padding-left: 45px;
-    padding-top: 13px;
-    width: 220px;
-}
-sup {
-    top: -6px;                /* Superscript character */   
-}
-.star {
-    font-size: 24px;
-    @include default-text;
-    color: $star-button
+                /* text in button */
+                color: $input-color;
+                background-color: $color-text;
+                border: 1px solid $border-color;
+                border-radius: 0;
+                margin-left: 10px;
+                padding: 3px 12px;
+              }
+              .custom-file-input:lang(en) ~ .custom-file-label::after {
+                content: "Choose file";
+              }
+              label {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .description {
+            height: 150px;
+          }
+        }
+      }
+      .forms-title-set {
+        font-size: 24px;
+        @include default-text; /* Set your prize */
+        padding: 55px 0 25px 35px;
+      }
+      .btn-green {
+        width: 124px;
+        height: 47px;
+        background-color: $star-button;
+        color: $color-text;
+        font-size: 15px;
+        @include default-text-400; /* button */
+        @include flex-center;
+        margin: 22px 0 68px 220px;
+      }
     }
-.form-control {
-    background-color: $background-input;      /* input */
-    border: 1px solid $border-color;
-}
-.form-control-sm {
-    display: inline-block;
-    height: 40px;
-    width: 894px;
-    padding: 0 20px;               /* input */
-    line-height: 1.5;
-    border-radius: 0px;
-    font-size: 15px;
-    @include default-text-400;
-    color: $input-color;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    position: relative;
-}
-.form-control.is-invalid {              
-    background-image: none;
-}
-textarea.form-control {
-    height: 150px;
-}
-.form-control.is-invalid {
-    border-color: $border-color;
-}
-.form-control-description {          /* padding for textarea  */
-    padding: 13px 20px;
-}
-.form-file-input {
-    border: 1px solid $border-color;        
-    width: 864px;
-    height: 40px;
-}
-.forms-title-set {
-    font-size: 24px;
-    @include default-text;     /* Set your prize */
-    padding: 55px 0 25px 35px;
-}
-.btn-green {
-    width: 124px;
-    height: 47px;
-    background-color: $star-button;
-    color: $color-text;
-    font-size: 15px;
-    @include default-text-400;              /* button */
-    @include flex-center;
-    margin: 25px 0 70px 216px;
-}
-.custom-file {
-    width: 894px;
-    margin-bottom: 20px;            /* input for files */
-}
-.custom-file-label {
-    
-    height: 40px;
-    background-color: $background-input;
-    border: 1px solid $border-color;          /* input for files */
-    border-radius: 0;
-    padding: 11px 0 11px 115px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    color: $input-color;
-    content: "No file choosen";
-}
-.custom-file-label::after {
-    top: 6px;
-    left: 0;
-    width: 90px;
-    height: 25px;
-    font-size: 12px;
-    @include default-text-400;
-       /* text in button */
-    color: $input-color;
-    background-color: $color-text;
-    border: 1px solid $border-color;
-    border-radius: 0;
-    margin-left: 10px;
-    padding: 3px 12px;
-}
-.custom-file-input:lang(en)~.custom-file-label::after {
-    content: "Choose file";
-}
-.empty {
-    background-color: $background-color;
-    height: 110px;
-}
-@media (max-width: 1200px) {
-    .custom-file-label {
-        right: 0px;
-        left: 0px;
+    .empty {
+      background-color: $background-color;
+      height: 110px;
     }
-    .btn-green {
-        margin: 25px 0 70px 186px;
-    }
-}
-@media (max-width: 1070px) {
-.custom-file-label {
-    right: 50px;
-    left: -10px;
-}
+  }
 }
 @media (max-width: 991px) {
-    .form-control-sm {
-        width: 594px;
-    }
-    .custom-file-label {
-        left: 33px;
-        right: 142px;
-    }
-    .btn-green {
-        margin: 25px 0 70px 186px;
-    }
-}
-@media (max-width: 830px) {
-.custom-file-label {
-    left: 36px;
-    right: 50px;
-    }
+  .label-forms {
+    padding: 30px 30px 0 30px;
+  }
 }
 @media (max-width: 767px) {
-    .form-control-sm {
-        width: 380px;
-    }
-}
-    @media (max-width: 690px) {
-.custom-file-label {
-    left: 71px;
-    right: 87px;
-}
-    
-.custom-file-label {
-    left: 56px;
-    right: 165px;
-}
-    .btn-green {
-        margin: 25px 0 70px 182px;
-    }
-}
-@media (max-width: 576px) {
-.custom-file-label {
-    left: 63px;
-    right: 50px;
-}
+  
+  .label-form-item {
+          
+    display: flex;
+  flex-direction: column;
+  }
 }

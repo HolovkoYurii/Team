@@ -137,6 +137,12 @@
             padding: 0px;
             &:hover{
                 background-color: transparent;
+                box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+    transition: all .5s ease;
+                .far-color{
+                    color: #ef6c00;
+                    
+                }
             }
             .gray-square{
                 margin: 18px 20px 25px 21px;
@@ -177,8 +183,7 @@
                 display: inline-block;
                 vertical-align: top;
                 color: #b0bec5;
-                .far-color{
-                    color: #ef6c00;
+               
                 }
                 .fa-envelope{
                     margin: 27px 0 0 60px;
@@ -186,11 +191,89 @@
                 .fa-reply{
                     margin: 25px 0 0 37px;
                 }
-             }
-        }
+            }
+        
         .dropdown-divider{
             margin: 0px;
         }
     }
 }
 /* / .dropdown-email */
+
+/* /* .dropdown-bell */
+
+.dropdown-bell{
+    .dropdown-menu{
+        width: 268px;
+        margin: auto;
+        border-radius: 0px;
+        padding: 0px;
+        line-height: 0.5;
+        border: 1px solid rgb(213,213,213);
+        background-clip: border-box;
+        .dropdown-item{
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer; 
+            &:hover{
+                background-color: transparent;
+                box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+    transition: all .5s ease;
+                .far-color{
+                    color: #ef6c00;
+                }
+            }
+            .gray-square {
+                margin: 20px 20px 20px 22px;
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #d4d4d4;
+                border: 1px solid #b8cbe2;
+            }
+            .bell-message {
+                display: inline-block;
+                
+            
+                
+               
+                .bell-text{
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #84b743;
+                    margin-top: 30px;
+                }
+                .bell-data{
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: $input-color;
+                    margin-top: 11px;
+                    margin-bottom: 23px;
+                }
+                .bell-data-color{
+                    color: #90a4ae;
+                }       
+                
+            }
+            .bell-badge{
+                display: inline-block;
+                vertical-align: top;
+                color: #b0bec5;
+                
+                .fa-bell{
+                    margin: 27px 0 0 60px;
+                }
+                .fa-reply{
+                    margin: 25px 0 0 37px;
+                }
+             }
+        }
+        
+        .dropdown-divider{
+            margin: 0px;
+        }
+    }
+}
+/*  .dropdown-bell */ 

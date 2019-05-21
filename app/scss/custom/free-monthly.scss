@@ -55,14 +55,11 @@
 }
 .col-hover:hover {
 
-  .bg {
-      background-color: #b5b5b5;             /* Hover */
-  }
-  .subtitle-block {
-      color: $hover;
-      background-color: #d4d4d4;
-  }
+  background-color: transparent;
+    box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+    transition: all .5s ease;
 }
+  
 
   @media (max-width: 1200px) {
   .roww-free {

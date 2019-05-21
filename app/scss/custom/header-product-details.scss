@@ -41,6 +41,9 @@
                     .fa-envelope:active{
                         color: #263238;
                     }
+                    .fa-bell:hover{
+                        color: #263238;
+                    }
                 }
                 .menu-icon-number{
                     @include flex-center;
