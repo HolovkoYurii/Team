@@ -57,7 +57,7 @@
                                     <div class="bell-data">26 Nov, 2016</div>
                                 </span>
                                 <span class="bell-badge">
-                                    <i class="far fa-bell"></i>
+                                    <i class="far fa-bell far-color"></i>
                                 </span>
                             </a>
                             <div class="dropdown-divider"></div>
@@ -69,7 +69,7 @@
                                     <div class="bell-data">26 Nov, 2016</div>
                                 </span>
                                 <span class="bell-badge">
-                                    <i class="far fa-bell"></i>
+                                    <i class="far fa-bell far-color"></i>
                                 </span>
                             </a>
                             <!-- / third dropdown-menu -->
@@ -268,7 +268,7 @@
         </div>
     </div>
     <!-- /.welcome-product-details -->
-        <div class="upload-product">
+    <div class="upload-product">
             <div class="container">
                 <div class="home-block">
                     <span class="home">Home</span><span class="home">-</span><span class="upload">Upload Product</span>
@@ -277,66 +277,117 @@
                     <div class="forms-title">
                         <h1>Upload Your item</h1>
                     </div>
-                    <div class="forms">
-                        <div class="item-form">
-                            <span class="forms-items">Select Categories <sup class="star">*</sup> </span>
-                            <select class="form-control form-control-sm">
-                                <option>Wordpress</option>
-                                <option>Joomla</option>
-                                <option>Plugins</option>
-                                <option>Component</option>
-                                <option>PSD</option>
-                            </select>
-                        </div>
-                        <div class="item-form">
-                            <span class="forms-items">Product Name<sup class="star">*</sup> </span>
-                            <input class="form-control form-control-sm" type="text" placeholder="Enter your product name here ...">
-                        </div>
-                        <div class="item-form">
-                            <span class="forms-items">Product Description<sup class="star">*</sup> </span>
-                            <textarea class="form-control form-control-sm form-control-description" id="validationTextarea" placeholder="&lt;h1&gt; Type your text  here &lt;/h1/&gt;" required></textarea>       
-                        </div>
-                        <div class="item-form">
-                            <span class="forms-items">Upload Main File<sup class="star">*</sup> </span>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">No file choosen</label>
+                    <div class="label-forms">
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Select Categories <sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <select class="form-control form-control-sm">
+                                    <option>Wordpress</option>
+                                    <option>Joomla</option>
+                                    <option>Plugins</option>
+                                    <option>Component</option>
+                                    <option>PSD</option>   
+                                </select>
                             </div>
                         </div>
-                        <div class="item-form">
-                            <span class="forms-items">File Included<sup class="star">*</sup> </span>
-                            <input class="form-control form-control-sm" type="text" placeholder="Select File Type">
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Product Name<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="Enter your product name here ...">
+                            </div>
                         </div>
-                        <div class="item-form">
-                            <span class="forms-items">File Dimensions<sup class="star">*</sup> </span>
-                            <input class="form-control form-control-sm" type="text" placeholder="Enter the item  dimentionss here ...">
+                        <div class="label-form-item">
+                            <div class="label-item description">
+                                <span>Product Description<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item description">
+                                <textarea class="form-control form-control-sm form-control-description" id="validationTextarea" placeholder="&lt;h1&gt; Type your text  here &lt;/h1/&gt;" required></textarea>       
+                            </div>
                         </div>
-                        <div class="item-form">
-                            <span class="forms-items">Item Tags<sup class="star">*</sup> </span>
-                            <input class="form-control form-control-sm" type="text" placeholder="Enter Tag Here">
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Upload Main File<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">No file choosen</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="forms-title-set">
-                            <h1>Set Your Price (US$)</h1>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Upload Screenshots<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">No file choosen</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>File Included<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <select class="form-control form-control-sm">
+                                    <option>Wordpress</option>
+                                    <option>Joomla</option>
+                                    <option>Plugins</option>
+                                    <option>Component</option>
+                                    <option>PSD</option>   
+                                </select>
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>File Dimensions<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="Enter the item  dimentionss here ...">
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Item Tags<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="Enter Tag Here">
+                            </div>
                         </div>
                     </div>
-                    <div class="forms">
-                        <div class="item-form">
-                            <span class="forms-items">Regular License<sup class="star">*</sup> </span>
-                            <input class="form-control form-control-sm" type="text" placeholder="$00.00">
-                        </div> 
-                        <div class="item-form">
-                            <span class="forms-items">Extended License<sup class="star">*</sup> </span>
-                            <input class="form-control form-control-sm" type="text" placeholder="$00.00">
+                    <h1 class="forms-title-set">Set Your Price (US$)</h1>
+                    <div class="label-forms">
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Regular License<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="$00.00">  
+                            </div>
                         </div>
-                        <div class="btn-green">
-                            <span>Submit</span>  
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Extended License<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="$00.00">  
+                            </div> 
                         </div>
-                    </div>   
+                    </div>
+                    <div class="btn-green">
+                        <span>Submit</span>  
+                    </div>
                 </div>
-                <div class="empty"></div>
-            </div> 
-        </div>  
-        <footer>
+                <div class="empty"></div>   
+            </div>        
+    </div>         
+    <footer>
                 <div class="subfooter-top">
                     <div class="default-container-footer">
                         <div class="wrapper">

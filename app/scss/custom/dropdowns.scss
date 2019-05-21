@@ -157,6 +157,12 @@
             padding: 0px;
             &:hover{
                 background-color: transparent;
+                box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+    transition: all .5s ease;
+                .far-color{
+                    color: #ef6c00;
+                    
+                }
             }
             .gray-square{
                 margin: 18px 20px 25px 21px;
@@ -197,8 +203,7 @@
                 display: inline-block;
                 vertical-align: top;
                 color: #b0bec5;
-                .far-color{
-                    color: #ef6c00;
+               
                 }
                 .fa-envelope{
                     margin: 27px 0 0 60px;
@@ -206,8 +211,8 @@
                 .fa-reply{
                     margin: 25px 0 0 37px;
                 }
-             }
-        }
+            }
+        
         .dropdown-divider{
             margin: 0px;
         }
@@ -233,6 +238,11 @@
             cursor: pointer; 
             &:hover{
                 background-color: transparent;
+                box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+    transition: all .5s ease;
+                .far-color{
+                    color: #ef6c00;
+                }
             }
             .gray-square {
                 margin: 20px 20px 20px 22px;
@@ -245,6 +255,8 @@
             }
             .bell-message {
                 display: inline-block;
+                
+            
                 
                
                 .bell-text{
@@ -269,9 +281,7 @@
                 display: inline-block;
                 vertical-align: top;
                 color: #b0bec5;
-                .far-color{
-                    color: #ef6c00;
-                }
+                
                 .fa-bell{
                     margin: 27px 0 0 60px;
                 }
