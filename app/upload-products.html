@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FOXTAR - market place</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">        
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Raleway:700|Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/allstyle.min.css">      
+    </head>
+    <body> 
+    <!-- HEADER -->
+    <header class="header-product-details">
+            <div class="menu-top">
+                <div class="menu-logo">
+                    <a href="./index.html"><img src="./img/logo.png" alt="site logo"></a>
+                </div>
+                <div class="menu-help">
+                    <p>Need help?<span>Talk to an expert: +61 3 8376 6284</span></p>
+                </div>
+                <div class="menu-icon">
+                    <!-- .dropdown-bell -->
+                    <div class="dropdown-bell">
+                        <!-- button decoration -->
+                        <button type="button" id="fabell" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-offset="-216,33">
+                            <a class="menu-icon-custom" href="">
+                                <i class="far fa-bell"></i>
+                                <span class="menu-icon-number position-icon-first">8</span>
+                            </a>
+                        </button>
+                        <!-- / button decoration  -->
+                        <!-- .dropdown-menu -->
+                        <div class="dropdown-menu" aria-labelledby="fabell">
+                            <!-- firs dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="bell-message">
+                                    <div class="bell-text">Need WP Help!</div>
+                                    <div class="bell-data">01 Dec, 2016</div>
+                                </span>
+                                <span class="bell-badge">
+                                    <i class="far fa-bell far-color"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- / firs dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="bell-message">
+                                    <div class="bell-text">Need WP Help!</div>
+                                    <div class="bell-data">26 Nov, 2016</div>
+                                </span>
+                                <span class="bell-badge">
+                                    <i class="far fa-bell far-color"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- / second dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="bell-message">
+                                    <div class="bell-text">Need WP Help!</div>
+                                    <div class="bell-data">26 Nov, 2016</div>
+                                </span>
+                                <span class="bell-badge">
+                                    <i class="far fa-bell far-color"></i>
+                                </span>
+                            </a>
+                            <!-- / third dropdown-menu -->
+                        </div>
+                    </div>
+                    <!-- .dropdown-bell -->
+                    <!-- .dropdown-email -->
+                    <div class="dropdown-email">
+                        <!-- button decoration -->
+                        <button type="button" id="emailfaenvelope" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-offset="-216,33">
+                            <a class="menu-icon-custom" href="">
+                                <i class="far fa-envelope"></i>
+                                <span class="menu-icon-number position-icon-second">5</span>
+                            </a>
+                        </button>
+                        <!-- / button decoration  -->
+                        <!-- .dropdown-menu -->
+                        <div class="dropdown-menu" aria-labelledby="emailfaenvelope">
+                            <!-- firs dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="email-message">
+                                    <div class="email-name">Kazi Fahim</div>
+                                    <div class="email-text">Need WP Help!</div>
+                                    <div class="email-data">01 Dec, 2016</div>
+                                </span>
+                                <span class="email-badge">
+                                    <i class="far fa-envelope far-color"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- / firs dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="email-message">
+                                    <div class="email-name">Richi Lenal</div>
+                                    <div class="email-text">Need WP Help!</div>
+                                    <div class="email-data">26 Nov, 2016</div>
+                                </span>
+                                <span class="email-badge">
+                                    <i class="far fa-envelope"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- / second dropdown-menu -->
+                            <a class="dropdown-item" href="#">
+                                <span class="gray-square"></span>
+                                <span class="email-message">
+                                    <div class="email-name">PsdBosS</div>
+                                    <div class="email-text">Psd Template Help!</div>
+                                    <div class="email-data email-data-color">26 Nov, 2016</div>
+                                </span>
+                                <span class="email-badge">
+                                    <i class="fas fa-reply"></i>
+                                </span>
+                            </a>
+                            <!-- / third dropdown-menu -->
+                        </div>
+                        <!-- / .dropdown-menu -->
+                    </div>
+
+                    <!-- /.dropdown-email -->
+                    <!-- .dropdown-basket -->
+                    <div class="dropdown-basket">
+                            <button class="dropdown-basket-btn" type="button" id="btn-basket-dropdown" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-offset="-210,31">
+                                <a class="menu-icon-custom" href=""><i class="fas fa-shopping-cart"></i></a>
+                                <span class="menu-icon-number position-icon-third">8</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btn-basket-dropdown">
+                                <a href="product-details.html">
+                                <div class="card-product-small">
+                                    <div class="foto-product-small"></div>
+                                    <div class="product-info-small">
+                                        <span class="product-title-small">Grand Ballet</span>
+                                        <span class="subtitle-small">WordPress</span>
+                                        <span class="price-product-small">$59</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="product-details.html">
+                                <div class="card-product-small">
+                                    <div class="foto-product-small"></div>
+                                    <div class="product-info-small">
+                                        <span class="product-title-small">Apple Device</span>
+                                        <span class="subtitle-small">WordPress</span>
+                                        <span class="price-product-small">$59</span>
+                                    </div>
+                                </div>
+                            </a>
+                                <div class="total-price">
+                                    <span>Total</span>
+                                    <span>$118</span>
+                                </div>
+                                <div class="btn-dropdown">
+                                    <div class="btn-go-cart">Go to Cart</div>
+                                    <div class="btn-checkout">Go to Checkout</div>
+                                </div>
+                            </div>
+                            <!-- /.dropdown-basket -->
+                    </div>
+                    <a class="menu-icon-custom menu-icon-border" href=""></a>
+                </div>
+                <div class="menu-customer-btn">
+                    <!-- .dropdown-user -->
+                    <div class="dropdown-user">
+                        <button class="btn-dropdown-user text-left" type="button" id="user-setting" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" data-offset="-40,24">
+                            <div class="menu-customer">
+                                <p>Mike Hussy <span class="menu-customer-fontawesom"><i
+                                            class="fas fa-angle-down"></i></span></p>
+                                <span>$171.00</span>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="user-setting">
+                            <ul>
+                                <li><a href="#">Profile Page</a></li>
+                                <li><a href="#">Prtfolio</a></li>
+                                <li><a href="#">Account Setting</a></li>
+                                <li><a href="#">Downloads</a></li>
+                                <li><a href="#">Wihlist</a></li>
+                                <li><a href="#">Uploat item</a></li>
+                                <li><a href="#">Statement</a></li>
+                                <li><a href="#">Withdraws</a></li>
+                            </ul>
+    
+                        </div>
+                        <!-- .dropdown-user -->
+                    </div>
+                    <div class="menu-top-button">
+                        <a href="" class="menu-top-button-l" data-toggle="modal"
+                            data-target="#exampleModalCenter">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- / menu-top -->
+            <!-- navbar menu -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WordPress</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Joomla</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">PSD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Plugins</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Components</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- / navbar menu -->
+        </header>
+        <!-- / .HEADER -->
+    <!-- welcome-product-details -->
+    <div class="welcome-product-details">
+        <div class="background">
+            <div class="container">
+                <h1>
+                    Premium WordPress Themes, Web Templates and Many More ...!
+                </h1>
+                <form action="">
+                    <span>
+                        <input type="text" class="search" placeholder="Search Your Keywords...">
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /.welcome-product-details -->
+    <div class="upload-product">
+            <div class="container">
+                <div class="home-block">
+                    <span class="home">Home</span><span class="home">-</span><span class="upload">Upload Product</span>
+                </div>
+                <div class="forms-block">
+                    <div class="forms-title">
+                        <h1>Upload Your item</h1>
+                    </div>
+                    <div class="label-forms">
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Select Categories <sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <select class="form-control form-control-sm">
+                                    <option>Wordpress</option>
+                                    <option>Joomla</option>
+                                    <option>Plugins</option>
+                                    <option>Component</option>
+                                    <option>PSD</option>   
+                                </select>
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Product Name<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="Enter your product name here ...">
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item description">
+                                <span>Product Description<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item description">
+                                <textarea class="form-control form-control-sm form-control-description" id="validationTextarea" placeholder="&lt;h1&gt; Type your text  here &lt;/h1/&gt;" required></textarea>       
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Upload Main File<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">No file choosen</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Upload Screenshots<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">No file choosen</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>File Included<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <select class="form-control form-control-sm">
+                                    <option>Wordpress</option>
+                                    <option>Joomla</option>
+                                    <option>Plugins</option>
+                                    <option>Component</option>
+                                    <option>PSD</option>   
+                                </select>
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>File Dimensions<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="Enter the item  dimentionss here ...">
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Item Tags<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="Enter Tag Here">
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="forms-title-set">Set Your Price (US$)</h1>
+                    <div class="label-forms">
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Regular License<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="$00.00">  
+                            </div>
+                        </div>
+                        <div class="label-form-item">
+                            <div class="label-item">
+                                <span>Extended License<sup class="star">*</sup> </span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control form-control-sm" type="text" placeholder="$00.00">  
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="btn-green">
+                        <span>Submit</span>  
+                    </div>
+                </div>
+                <div class="empty"></div>   
+            </div>        
+    </div>         
+    <footer>
+                <div class="subfooter-top">
+                    <div class="default-container-footer">
+                        <div class="wrapper">
+                            <div class="about coll-xs-12">
+                                <h3 class="title-footer">About Company</h3>
+                                <p class="text-footer">Praesent vel rutrum purus. Nam vel dui eu 
+                                    risus duis dignissim digniSuspen 
+                                    disse.Fusce sit amet urna iat.Praesent vel 
+                                    rutrum purus. </p>
+                                <div class="adress">
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <p class="contact">PO Box 16122 Collins Street West 
+                                            Victoria 8007 Australia </p>
+                                </div>
+                                <div class="phone">
+                                    <span><i class="fas fa-phone"></i></span>
+                                    <p class="contact">+61 3 8376 6284</p>
+                                </div>
+                            </div>        
+                            <div class="join coll-xs-12">
+                                <h3 class="title-footer">Join Our Community</h3>
+                                <ul>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Forums</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Become an author</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Community Meetups</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">    
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Become an Affiliate</span>
+                                        </a>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="help coll-xs-12">
+                                <h3 class="title-footer">Need help</h3>
+                                <ul>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Help Center</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Forxtar Market Terms</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Author terms</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Forxtar Licenses </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href ="#">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span class="list">Contact us</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="follow coll-xs-12">
+                                <h3 class="title-footer">Follow Us On</h3>
+                                <nav class="sprite">
+                                    <a href="" class="icon icon-facebook"></a>
+                                    <a href="" class="icon icon-twitter"></a>
+                                    <a href="" class="icon icon-youtoobe"></a>
+                                    <a href="" class="icon icon-pinterest"></a>
+                                    <a href="" class="icon icon-in"></a>
+                                    
+                                    
+                                </nav>
+                                <h3 class="newsletter">Newsletter Sign Up</h3>
+                                <div class="form-btn-footer">
+                                    <form action="" class="form-footer">
+                                        <input type="text" name="user-name" placeholder="E-mail Address" class="form-control1">
+                                    </form>
+                                    
+                                    <div class="btn-footer">
+                                        <i class="fas fa-location-arrow"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subfooter-bottom">
+                    <span class="text-subfooter-bottom">&copy;  2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+    
+                </div>
+                    
+            </footer>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-title">Login</div>
+                        <form action=""></div>
+                            <input type="text">
+                            <input type="password">
+                        </form>
+                        <div class="model-btns">
+                            <button>Submit</button>
+                            <button>Create an account</button>
+                        </div>
+                        <div><a href="">lost password?</a></div>
+           
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+           <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+           <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+           <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>  
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+           <script src="js/scripts.js"></script>  
+    </body>
+</html>

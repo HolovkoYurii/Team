@@ -1,0 +1,279 @@
+@import "../_variabels";
+@import "../_mixins";
+/* dropdown-user */
+.dropdown-user{
+    .dropdown-toggle::after{
+        display:none;
+    }
+    li{
+        margin-bottom:22px;
+        &:last-child{
+            margin-bottom:0;
+        }
+    &:before{
+        content: "\f105";
+    font-family: "Fontawesome";
+    color:$default-color-green;
+    font-size: 14px;
+    margin-right: 10px;
+    }
+    }
+    ul{
+        padding-left:20px;
+        font-family: 'Roboto', sans-serif;
+        color:#5d6e79;
+    }
+    .dropdown-menu{
+        padding:21px 0 28px 0;
+        border-radius:0;
+       
+    }   
+    
+}
+@media(max-width:920px){
+  
+    .dropdown-basket{
+        .show{
+            margin-top: 59px;
+        }
+    }
+}
+/* /dropdown-user */
+
+/* dropdown-basket */
+.dropdown-basket{
+    .dropdown-toggle::after{
+        display:none;
+    }
+      
+    .card-product-small{
+        margin:0;
+       padding: 0px 0px 24px 24px;
+        border:none;
+        margin-bottom:23px;
+        &:nth-child(2){
+        margin-bottom: 17px;
+        }
+        .foto-product-small{
+            height: 60px;
+            min-width: 75px;
+            margin-right: 16px;
+        }
+        .product-info-small{
+            padding:0; 
+        }
+        .product-title-small{
+            margin-bottom:0;
+            font-size: 14px;
+        }
+        .subtitle-small{
+            margin-bottom:0;
+        }
+        .price-product-small{
+            font-size:16px;
+        }
+    }
+
+    .dropdown-menu{
+        padding: 20px 0px 13px 0px;
+        width: 270px;
+        border-radius:0;
+    }
+    
+    .btn-dropdown{
+        @include flex-s-b;
+        padding:0 17px;
+        .btn-go-cart{
+            height:35px;
+            background:$default-color-green;
+            color:$color-text;
+            font-size: 14px;
+            font-weight: 700;
+            @include flex-center;
+            margin-bottom:0;
+            width: 104px;
+            cursor: pointer;
+            
+        }
+        .btn-checkout{
+            height:35px;
+            background:#cb5749;
+            color:$color-text;
+            font-size: 14px;
+            font-weight: 700;
+            @include flex-center;
+            margin-bottom:0;
+            width: 125px;
+            cursor: pointer;
+
+        }
+    }
+    .total-price{
+        @include flex-s-b;
+        padding: 0px 37px 16px 30px;
+        span{
+            font-family: 'Roboto',sans-serif;
+            font-weight:700;
+            font-size: 16px;
+        }
+    }
+}
+    
+
+/* /dropdown-basket */
+
+/* .dropdown-email */
+
+.dropdown-email{
+    .dropdown-menu{
+        width: 268px;
+        margin: auto;
+        border-radius: 0px;
+        padding: 0px;
+        line-height: 0.5;
+        border: 1px solid rgb(213,213,213);
+        background-clip: border-box;
+        .dropdown-item{
+            padding: 0px;
+            &:hover{
+                background-color: transparent;
+                box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+    transition: all .5s ease;
+                .far-color{
+                    color: #ef6c00;
+                    
+                }
+            }
+            .gray-square{
+                margin: 18px 20px 25px 21px;
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #d4d4d4;
+                border: 1px solid #b8cbe2;
+            }
+            .email-message{
+                display: inline-block;
+                vertical-align: top;
+                .email-name{
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #263238;
+                    margin-top: 24px;
+                }
+                .email-text{
+                    font-weight: 400;
+                    font-size: 11px;
+                    color: #84b743;
+                    margin-top: 9px;
+                }
+                .email-data{
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: $input-color;
+                    margin-top: 11px;
+                    margin-bottom: 23px;
+                }
+                .email-data-color{
+                    color: #90a4ae;
+                }
+            }
+            .email-badge{
+                display: inline-block;
+                vertical-align: top;
+                color: #b0bec5;
+               
+                }
+                .fa-envelope{
+                    margin: 27px 0 0 60px;
+                }
+                .fa-reply{
+                    margin: 25px 0 0 37px;
+                }
+            }
+        
+        .dropdown-divider{
+            margin: 0px;
+        }
+    }
+}
+/* / .dropdown-email */
+
+/* /* .dropdown-bell */
+
+.dropdown-bell{
+    .dropdown-menu{
+        width: 268px;
+        margin: auto;
+        border-radius: 0px;
+        padding: 0px;
+        line-height: 0.5;
+        border: 1px solid rgb(213,213,213);
+        background-clip: border-box;
+        .dropdown-item{
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer; 
+            &:hover{
+                background-color: transparent;
+                box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
+    transition: all .5s ease;
+                .far-color{
+                    color: #ef6c00;
+                }
+            }
+            .gray-square {
+                margin: 20px 20px 20px 22px;
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #d4d4d4;
+                border: 1px solid #b8cbe2;
+            }
+            .bell-message {
+                display: inline-block;
+                
+            
+                
+               
+                .bell-text{
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #84b743;
+                    margin-top: 30px;
+                }
+                .bell-data{
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: $input-color;
+                    margin-top: 11px;
+                    margin-bottom: 23px;
+                }
+                .bell-data-color{
+                    color: #90a4ae;
+                }       
+                
+            }
+            .bell-badge{
+                display: inline-block;
+                vertical-align: top;
+                color: #b0bec5;
+                
+                .fa-bell{
+                    margin: 27px 0 0 60px;
+                }
+                .fa-reply{
+                    margin: 25px 0 0 37px;
+                }
+             }
+        }
+        
+        .dropdown-divider{
+            margin: 0px;
+        }
+    }
+}
+/*  .dropdown-bell */ 

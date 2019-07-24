@@ -4,38 +4,39 @@
 footer {
     width: 100%;
                             /* footer */
-    background-color: #263238;
+    background-color: $background-text;
   }
   .subfooter-top {
     width: 100%;
-    border-bottom: 1px solid #b0bec5;  /* upper subfooter */
-    display: flex;
-    justify-content: center;
+    border-bottom: 1px solid $line-color;  /* upper subfooter */
   }
   .default-container-footer  {
-    width: 1170px;
+    @include default-container;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 30px;
-      
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
     }
   .about {
-    width: 28.125%;
+    width: 270px;
     margin-right: 30px;                                /* Block "About" */
   }
   .title-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;                           
     font-size: 22px;
-    color: #ffffff;
+    color: $color-text;
     padding-top: 120px;
   }
     
    .title-footer::after {
       content: '';
       display: block;
-      background-color: #8BC34A;                /* Line */
+      background-color: $star-button;                /* Line */
       margin-top: 25px;
       margin-bottom: 30px;
       width: 50px;
@@ -43,10 +44,10 @@ footer {
   }
   .text-footer {
       text-align: left;
-      font-family: 'Roboto', sans-serif;             /* Text */
+      @include default-text-400;
+                  /* Text */
       font-size: 15px;
-      font-weight: 400;
-      color: #b0bec5;
+      color: $line-color;
       margin-bottom: 30px;	
   }
   .adress {
@@ -54,19 +55,19 @@ footer {
     flex-direction: row;
   }
   .fas.fa-map-marker-alt {
-  color: #8BC34A;                       /* Icon marer in a map */
+  color: $star-button;                       /* Icon marer in a map */
   }
   
   .contact {
       font-family: 'Lato', sans-serif;
       font-weight: 300;
       font-size: 14px;                       /* Contact informaton */
-      color: #ffffff;
+      color: $color-text;
       display: inline-block;
       margin-left: 15px;
   }
   .fas.fa-phone {
-      color: #8BC34A;                 /* color for phone */
+      color: $star-button;                 /* color for phone */
     }   
       .fas.fa-phone {
       transform: rotateY(180deg);/* Icon phone */
@@ -79,11 +80,14 @@ footer {
   }
   
   .join {
-    width: 22.9166%;
+    width: 220px;
     margin-right: 30px;             /* block "Join" */
   }
+  a {
+    cursor: pointer;
+  }
   .fas.fa-angle-right {
-    color: #8BC34A;
+    color: $star-button;
     font-size: 15px;  
   }
   .list {
@@ -100,7 +104,7 @@ footer {
 		}
   }
   .help {
-    width: 20.8333%; 
+    width: 200px; 
     margin-right: 30px;       /* block help */
   }
   .help {
@@ -109,7 +113,7 @@ footer {
     }
   }
   .follow {
-    width: 28.125%; 
+    width: 270px; 
                    /* Block "Follow" */
   }
   .sprite {
@@ -152,10 +156,9 @@ footer {
     height: 28px;
   }
   .newsletter {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;                           
+    @include default-text-400;                           
     font-size: 22px;                        /* features of newsletter */
-    color: #ffffff;
+    color: $color-text;
     margin-top: 40px;
 	  margin-bottom: 20px;
   }
@@ -171,13 +174,12 @@ footer {
     width: 215px;
     height: 40px;
     padding: 0 15px;
-    font-family: 'Roboto', sans-serif;
+    @include default-text-400;
     background-color: #2f3c43;           /* Form */
-    border-left: 1px solid #000101;
-    border-top: 1px solid #000101;
+    border-left: 1px solid $border-input;
+    border-top: 1px solid $border-input;
     color: #697378;
     font-size: 14px;
-    font-weight: 400;
   }
   .btn-footer {
     width: 40px;
@@ -185,10 +187,10 @@ footer {
     display: flex;
     justify-content: center;             /* button */
     align-items: center;
-    background-color: #8BC34A;
+    background-color: $star-button;
   }
   .fa-location-arrow {
-    color: #fff;
+    color: $color-text;
   }
   
   .text-subfooter-bottom {
@@ -196,12 +198,51 @@ footer {
     color: #919699;
     padding-top: 27px;
     padding-bottom: 35px;
-    font-family: 'Roboto', sans-serif;        /* Text in subfooter */
-    font-weight: 400;
+    @include default-text-400;        /* Text in subfooter */
     text-align: center;
     display: block; 
   }
+
+  @media (max-width: 1200px) {
+    .default-container-footer  {
+      @include default-container;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 0px 30px; 
+    }
+    .phone {
+      margin-top: 10px;
+      padding-bottom: 0px;
+  }
+  .help {
+    
+    margin-bottom: 100px;
+  }
+}
+  @media (max-width: 991px) {
+    .title-footer {
+      padding-top: 0px;
+    }
+    .wrapper {
+      margin: 50px 0;
+    }
+    .help {
+    
+      margin-bottom: 0px;
+    }
+  }
+    
   @media (max-width: 767px) {
+    .default-container-footer  {
+      @include default-container;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 0px 30px; 
+    }
     .about {
       width: 270px;
       
@@ -226,21 +267,35 @@ footer {
   padding-bottom: 0px;
   }
 }
-@media (max-width: 548px) {
-  .coll-xs-12 {
-      width: 100%;
-  }
-  .title-footer {
-    padding-top: 50px;
+@media (max-width: 576px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 50px 0;
 }
+.help {
+    
+  margin-bottom: 0px;
+}
+}
+  
+  @media (max-width: 548px) {
+  .default-container-footer  {
+    @include default-container;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 30px; 
+  }
+  
+  .title-footer {
+    padding-top: 0px;
+  }
 .help {
   width: 100%;
   margin-bottom: 0px;
-}
+  }
 .follow {
   width: 100%;
   margin-bottom: 70px;
+  }
 }
-}
-  
-  

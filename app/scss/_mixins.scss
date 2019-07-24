@@ -1,14 +1,44 @@
+
 @mixin default-container () {
-    width: 1170px;
+    max-width: 1200px;
     margin: auto;
-    
-}
+    padding: 0 15px;
+}   
 @mixin flex-center () {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+@mixin flex-column{
+display: flex;
+flex-direction: column;
+}
+
 @mixin coll-4 () {
     width: 33.333333%;             /* Width of the column for 4/12 part of the page */ 
 }
+@mixin default-text () {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;   
+}
+@mixin default-text-400 () {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;   
+}
+
 	
+@mixin flex-wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@mixin sidebar-block {
+    background:#fff;
+    padding: 26px 31px 29px 31px;
+    border: solid 1px #ddd;
+    margin-bottom:30px;
+}
+@mixin flex-s-b (){
+    display: flex;
+    justify-content: space-between;
+}

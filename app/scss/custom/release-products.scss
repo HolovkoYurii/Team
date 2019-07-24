@@ -1,45 +1,52 @@
 @import "../_variabels";
 @import "../_mixins";
 .release-products{
-    background:rgb(244, 246, 245);
-    padding-top: 121px;
-    padding-bottom: 112px;
-}
-.release-products-title{
+  background:rgb(244, 246, 245);
+  padding-top: 121px;
+  padding-bottom: 112px;
+  .ui-tabs-panel{
+  min-height:920px;
+  }
+   .container{
+    max-width: 1950px;
+    padding: 0 15px;
+   }
+} 
+h2{   
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;  
+  font-size:36px; 
+  padding: 0px 13px 60px;  
+  text-align: center;     
+}      
+.our-work{    
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size:36px; 
-    padding-bottom: 60px;  
-    text-align: center;
-
-}
-.our-work{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 500;     
     font-size: 14px;
     display:flex;
     justify-content: center;
     padding-bottom: 59px;
-}
-.our-work li{background:#fff; 
+    flex-wrap: wrap;
+}  
+.our-work li{background:$color-text;   
   padding:13px 21px;
   margin:-1px;
 }
 .our-work li.ui-state-active{
   background:#c94d3f; 
-  color:#fff;
-}  
-.our-work li{ 
+  color:$color-text; 
+}   
+.our-work li{  
   margin-right: 6px; 
 }   
-.our-work li:last-child{  
-    margin:0;
-}
+ 
 .product-details{
+    min-width: 332px;
+    max-width: 430px;
+    width: 24%;
     padding-bottom: 22px; 
-    background-color:#fff;
-    width: 450px; 
-    margin: 0 15px 32px 15px;
+    background-color:$color-text;
+    margin: 0 2px 32px 2px;
     border-top:none;
     box-shadow: 0 1px 5px 0 #dadfe2;
     -webkit-box-shadow: 0 1px 5px 0 #dadfe2;
@@ -49,12 +56,11 @@
     box-shadow: 0 1px 5px 0 #dadfe2;
     position: relative; 
     overflow: hidden;
-  } 
- 
-  .product-details:hover{ 
+  }   
+.product-details:hover{ 
     box-shadow: 0 14px 28px transparent, 0 14px 14px rgba(0,0,0,.09);
     transition: all 0.5s ease;
-  }
+  }  
   .product-information{ 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -76,7 +82,7 @@
      padding: 0 31px 17px 31px;
      margin-bottom: 17px;
   }
-  .subtitle{
+   .subtitle{
     font-size: 14px;
     color:rgb(156, 194, 84);
     font-weight: 500;
@@ -92,11 +98,12 @@
     display:flex;
     align-items: center;
     padding: 0 31px 0 31px;
+    justify-content: space-between;
   }
   .assessment-product span:nth-child(2){
     font-size: 14px;
     color:rgb(93, 110, 121);
-    margin-right: 140px;
+    margin-right: auto;
     font-weight: 500;
   }
   .circle{
@@ -129,59 +136,71 @@
     height: 110px;
     position: absolute;
     background: rgb(156, 194, 84);
-    right: 408px;
-    bottom: 356px;
+    top:-9%;
+    left:-6%;
     transform: rotate(45deg);
     content:"";
-    
   }
   .lightning::after{
     content:"\f0e7";
     font-size: 18px;
-    color:#fff;
+    color:$color-text;
     font-family:"Fontawesome";
     position: absolute;
     top: 11px;
     left: 14px;
-  } 
+  }   
   .all{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    @include flex-wrap;
+    align-items: flex-start;
+} 
  .wordPress{
-   display:flex; 
-   justify-content: space-around;
+  @include flex-wrap;
+  align-items: flex-start;
+  .product-details{
+    width: 100%;
+  }
  }
  .jomla{
-  display:flex;
-  justify-content: space-around;
-
+  @include flex-wrap;
+  align-items: flex-start;
+  .product-details{
+    width: 100%;
+  }
  }
  .plugins{
-  display:flex;
-  justify-content: space-around;
+  align-items: flex-start;
+  @include flex-wrap;
+  .product-details{
+    width: 100%;
+  }
 
  }
  .component{
-  display:flex;
-  justify-content: space-around;
+  @include flex-wrap;
+  align-items: flex-start;
+  .product-details{
+    width: 100%;
+  }
 
  }
  .pcd{
-  display:flex;
-  justify-content: space-around;
-
- }
+  align-items: flex-start;
+  @include flex-wrap;
+  .product-details{
+    width: 100%;
+  }
+}
  .more-items{
-  text-align: center;
+  display:flex;
+  justify-content: center;
   margin-top: 46px;
  }
  .new-items{
    font-size: 16px;
    font-family: 'Roboto', sans-serif;
    color:rgb(46, 53, 58);
-   background: #fff;
+   background: $color-text;
    padding: 21px 40px 19px 32px;
    margin:  0 6px ;
    box-shadow: 0 1px 5px 0 #dadfe2;
@@ -190,12 +209,4 @@
    box-shadow: 0 1px 5px 0 #dadfe2;-webkit-box-shadow:  0 1px 5px 0 #dadfe2;
   -moz-box-shadow: 0 1px 5px 0 #dadfe2;
    box-shadow: 0 1px 5px 0 #dadfe2;
- 
- }
-  
- 
- 
-
-
-
- 
+ } 
